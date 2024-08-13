@@ -272,7 +272,7 @@ SITE:STRING=rahul-VirtualBox
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
@@ -354,6 +354,9 @@ ament_lint_common_DIR:PATH=/opt/ros/humble/share/ament_lint_common/cmake
 
 //Path to a program.
 ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
+
+//The directory containing a CMake configuration file for amr_interfaces.
+amr_interfaces_DIR:PATH=/home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake
 
 //Value Computed by CMake
 amr_pkg_BINARY_DIR:STATIC=/home/rahul/ros2_ws/build/amr_pkg
