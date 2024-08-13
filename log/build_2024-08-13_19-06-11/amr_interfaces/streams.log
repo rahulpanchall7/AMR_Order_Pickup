@@ -1,0 +1,189 @@
+[0.014s] Invoking command in '/home/rahul/ros2_ws/build/amr_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_interfaces -- -j6 -l6
+[0.069s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.082s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.095s] [  6%] Built target ament_cmake_python_copy_amr_interfaces
+[0.371s] running egg_info
+[0.373s] creating amr_interfaces.egg-info
+[0.373s] writing amr_interfaces.egg-info/PKG-INFO
+[0.374s] writing dependency_links to amr_interfaces.egg-info/dependency_links.txt
+[0.374s] writing top-level names to amr_interfaces.egg-info/top_level.txt
+[0.377s] writing manifest file 'amr_interfaces.egg-info/SOURCES.txt'
+[0.388s] reading manifest file 'amr_interfaces.egg-info/SOURCES.txt'
+[0.392s] writing manifest file 'amr_interfaces.egg-info/SOURCES.txt'
+[0.396s] [  6%] Built target amr_interfaces__cpp
+[0.416s] [  9%] [32mBuilding C object CMakeFiles/amr_interfaces__rosidl_generator_c.dir/rosidl_generator_c/amr_interfaces/msg/detail/order__functions.c.o[0m
+[0.419s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.433s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.442s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.499s] [ 19%] Built target ament_cmake_python_build_amr_interfaces_egg
+[0.545s] [ 22%] [32m[1mLinking C shared library libamr_interfaces__rosidl_generator_c.so[0m
+[0.614s] [ 22%] Built target amr_interfaces__rosidl_generator_c
+[0.633s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.635s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.636s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.737s] [ 35%] [32mBuilding CXX object CMakeFiles/amr_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amr_interfaces/msg/detail/order__type_support.cpp.o[0m
+[0.766s] [ 41%] [32mBuilding CXX object CMakeFiles/amr_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amr_interfaces/msg/detail/dds_fastrtps/order__type_support.cpp.o[0m
+[0.767s] [ 41%] [32mBuilding CXX object CMakeFiles/amr_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amr_interfaces/msg/order__type_support.cpp.o[0m
+[0.997s] [ 45%] [32mBuilding C object CMakeFiles/amr_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amr_interfaces/msg/detail/order__type_support.c.o[0m
+[1.016s] [ 48%] [32mBuilding CXX object CMakeFiles/amr_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amr_interfaces/msg/detail/order__type_support_c.cpp.o[0m
+[1.029s] [ 51%] [32mBuilding CXX object CMakeFiles/amr_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_interfaces/msg/order__type_support.cpp.o[0m
+[1.062s] [ 54%] [32m[1mLinking C shared library libamr_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.114s] [ 58%] [32m[1mLinking CXX shared library libamr_interfaces__rosidl_typesupport_c.so[0m
+[1.152s] [ 58%] Built target amr_interfaces__rosidl_typesupport_introspection_c
+[1.173s] [ 61%] [32m[1mLinking CXX shared library libamr_interfaces__rosidl_typesupport_cpp.so[0m
+[1.174s] [ 61%] Built target amr_interfaces__rosidl_typesupport_c
+[1.243s] [ 61%] Built target amr_interfaces__rosidl_typesupport_cpp
+[1.294s] [ 64%] [32m[1mLinking CXX shared library libamr_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.385s] [ 67%] [32m[1mLinking CXX shared library libamr_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.408s] [ 67%] Built target amr_interfaces__rosidl_typesupport_introspection_cpp
+[1.442s] [ 70%] [32m[1mLinking CXX shared library libamr_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[1.576s] [ 70%] Built target amr_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.626s] [ 70%] Built target amr_interfaces__rosidl_typesupport_fastrtps_c
+[1.658s] [ 70%] Built target amr_interfaces
+[1.696s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.039s] [ 74%] Built target amr_interfaces__py
+[2.069s] [ 77%] [32mBuilding C object CMakeFiles/amr_interfaces__rosidl_generator_py.dir/rosidl_generator_py/amr_interfaces/msg/_order_s.c.o[0m
+[2.220s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/amr_interfaces/libamr_interfaces__rosidl_generator_py.so[0m
+[2.274s] [ 80%] Built target amr_interfaces__rosidl_generator_py
+[2.307s] [ 90%] [32mBuilding C object CMakeFiles/amr_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/amr_interfaces/_amr_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.307s] [ 90%] [32mBuilding C object CMakeFiles/amr_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/amr_interfaces/_amr_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.307s] [ 90%] [32mBuilding C object CMakeFiles/amr_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/amr_interfaces/_amr_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.412s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/amr_interfaces/amr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.414s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/amr_interfaces/amr_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.416s] [100%] [32m[1mLinking C shared library rosidl_generator_py/amr_interfaces/amr_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.459s] [100%] Built target amr_interfaces__rosidl_typesupport_c__pyext
+[2.459s] [100%] Built target amr_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.459s] [100%] Built target amr_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.478s] Invoked command in '/home/rahul/ros2_ws/build/amr_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_interfaces -- -j6 -l6
+[2.578s] Invoking command in '/home/rahul/ros2_ws/build/amr_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_interfaces
+[2.589s] -- Install configuration: ""
+[2.589s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/ament_index/resource_index/rosidl_interfaces/amr_interfaces
+[2.589s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces
+[2.589s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg
+[2.589s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/order.h
+[2.589s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.590s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail
+[2.590s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__struct.h
+[2.590s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__functions.c
+[2.590s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__type_support.h
+[2.590s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__functions.h
+[2.591s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/environment/library_path.sh
+[2.591s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/environment/library_path.dsv
+[2.591s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_generator_c.so
+[2.592s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_generator_c.so" to ""
+[2.592s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces
+[2.592s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg
+[2.592s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.592s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail
+[2.592s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__rosidl_typesupport_fastrtps_c.h
+[2.592s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.593s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.593s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces
+[2.593s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg
+[2.593s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.593s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail
+[2.593s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__rosidl_typesupport_introspection_c.h
+[2.594s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__type_support.c
+[2.594s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_introspection_c.so
+[2.598s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.598s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_c.so
+[2.598s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_c.so" to ""
+[2.598s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces
+[2.598s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg
+[2.598s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail
+[2.598s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__builder.hpp
+[2.598s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__traits.hpp
+[2.598s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__struct.hpp
+[2.598s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/order.hpp
+[2.599s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces
+[2.599s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg
+[2.599s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail
+[2.599s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/dds_fastrtps
+[2.599s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__rosidl_typesupport_fastrtps_cpp.hpp
+[2.599s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.599s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.599s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.599s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces
+[2.599s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg
+[2.599s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail
+[2.599s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__rosidl_typesupport_introspection_cpp.hpp
+[2.599s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/include/amr_interfaces/amr_interfaces/msg/detail/order__type_support.cpp
+[2.599s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.600s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.600s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_cpp.so
+[2.600s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.600s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/environment/pythonpath.sh
+[2.600s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/environment/pythonpath.dsv
+[2.600s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces-0.0.0-py3.10.egg-info
+[2.600s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.600s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.600s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/amr_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/_amr_interfaces_s.ep.rosidl_typesupport_c.c
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/amr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/amr_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/libamr_interfaces__rosidl_generator_py.so
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/_amr_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/__init__.py
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/_amr_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.601s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/msg
+[2.602s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/msg/_order_s.c
+[2.602s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/msg/_order.py
+[2.602s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/msg/__init__.py
+[2.649s] Listing '/home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces'...
+[2.649s] Compiling '/home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/__init__.py'...
+[2.649s] Listing '/home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/msg'...
+[2.649s] Compiling '/home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/msg/__init__.py'...
+[2.649s] Compiling '/home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/msg/_order.py'...
+[2.654s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/amr_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.655s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/amr_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.655s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/amr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.655s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/amr_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.655s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/amr_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.656s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/local/lib/python3.10/dist-packages/amr_interfaces/amr_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.656s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_generator_py.so
+[2.656s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_interfaces/lib/libamr_interfaces__rosidl_generator_py.so" to ""
+[2.656s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/msg/Order.idl
+[2.657s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/msg/Order.msg
+[2.657s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/ament_index/resource_index/package_run_dependencies/amr_interfaces
+[2.657s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/ament_index/resource_index/parent_prefix_path/amr_interfaces
+[2.657s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/environment/ament_prefix_path.sh
+[2.657s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/environment/ament_prefix_path.dsv
+[2.658s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/environment/path.sh
+[2.658s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/environment/path.dsv
+[2.658s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/local_setup.bash
+[2.658s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/local_setup.sh
+[2.658s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/local_setup.zsh
+[2.659s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/local_setup.dsv
+[2.659s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/package.dsv
+[2.659s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/ament_index/resource_index/packages/amr_interfaces
+[2.659s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/export_amr_interfaces__rosidl_generator_cExport.cmake
+[2.659s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/export_amr_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.660s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/export_amr_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.660s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/export_amr_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.660s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.660s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.660s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfaces__rosidl_typesupport_cExport.cmake
+[2.661s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.661s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/export_amr_interfaces__rosidl_generator_cppExport.cmake
+[2.661s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/export_amr_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.661s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/export_amr_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.662s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.662s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.662s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfaces__rosidl_typesupport_cppExport.cmake
+[2.662s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.662s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/export_amr_interfaces__rosidl_generator_pyExport.cmake
+[2.662s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/export_amr_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.663s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.663s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.663s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.663s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.663s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.664s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.664s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.664s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfacesConfig.cmake
+[2.664s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/cmake/amr_interfacesConfig-version.cmake
+[2.664s] -- Installing: /home/rahul/ros2_ws/install/amr_interfaces/share/amr_interfaces/package.xml
+[2.668s] Invoked command in '/home/rahul/ros2_ws/build/amr_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_interfaces

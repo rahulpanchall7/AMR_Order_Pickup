@@ -1,0 +1,6 @@
+{
+  "package_name": "amr_interfaces",
+  "non_idl_tuples": [
+    "/home/rahul/ros2_ws/src/amr_interfaces:msg/Order.msg"
+  ]
+}

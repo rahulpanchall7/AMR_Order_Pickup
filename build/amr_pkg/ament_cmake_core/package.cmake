@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "amr_pkg")
 set(amr_pkg_VERSION "0.0.0")
-set(amr_pkg_MAINTAINER "rahul <rahul@todo.todo>")
+set(amr_pkg_MAINTAINER "rahul <rahulpanchal7.de@gmail.com>")
 set(amr_pkg_BUILD_DEPENDS "rclcpp")
 set(amr_pkg_BUILDTOOL_DEPENDS "ament_cmake")
 set(amr_pkg_BUILD_EXPORT_DEPENDS "rclcpp")
