@@ -1,0 +1,15 @@
+/home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg
+/home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.dsv
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.sh
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.dsv
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.bash
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.sh
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.zsh
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.dsv
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.dsv
+/home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/packages/amr_pkg
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig.cmake
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig-version.cmake
+/home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.xml
