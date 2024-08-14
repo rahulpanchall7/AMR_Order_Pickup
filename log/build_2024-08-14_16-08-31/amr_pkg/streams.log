@@ -1,0 +1,26 @@
+[0.019s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[0.115s] [ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[12.712s] [100%] [32m[1mLinking CXX executable orderoptimizer[0m
+[13.684s] [100%] Built target orderoptimizer
+[13.704s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[13.762s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_pkg
+[13.773s] -- Install configuration: ""
+[13.773s] -- Installing: /home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer
+[13.779s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer" to ""
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.dsv
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.sh
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.dsv
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.bash
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.sh
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.zsh
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.dsv
+[13.780s] -- Installing: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.dsv
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/packages/amr_pkg
+[13.780s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig.cmake
+[13.781s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig-version.cmake
+[13.781s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.xml
+[13.786s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_pkg

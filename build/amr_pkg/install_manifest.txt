@@ -1,3 +1,4 @@
+/home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer
 /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg
 /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg
 /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh

@@ -1,0 +1,58 @@
+[0.021s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[0.106s] [35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[0.136s] [ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[15.576s] [100%] [32m[1mLinking CXX executable orderoptimizer[0m
+[16.488s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: warning: relocation against `_ZTVN4YAML9ExceptionE' in read-only section `.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]'
+[16.541s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Exception::Exception(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[16.541s] OrderOptimizer.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x61): undefined reference to `vtable for YAML::Exception'
+[16.543s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::RepresentationException::RepresentationException(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[16.543s] OrderOptimizer.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x32): undefined reference to `vtable for YAML::RepresentationException'
+[16.545s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::InvalidNode::InvalidNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[16.545s] OrderOptimizer.cpp:(.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x71): undefined reference to `vtable for YAML::InvalidNode'
+[16.546s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::BadConversion::BadConversion(YAML::Mark const&)':
+[16.546s] OrderOptimizer.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x7c): undefined reference to `vtable for YAML::BadConversion'
+[16.550s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::memory_holder::create_node()':
+[16.550s] OrderOptimizer.cpp:(.text._ZN4YAML6detail13memory_holder11create_nodeEv[_ZN4YAML6detail13memory_holder11create_nodeEv]+0x20): undefined reference to `YAML::detail::memory::create_node()'
+[16.553s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node_ref::mark_defined()':
+[16.553s] OrderOptimizer.cpp:(.text._ZN4YAML6detail8node_ref12mark_definedEv[_ZN4YAML6detail8node_ref12mark_definedEv]+0x20): undefined reference to `YAML::detail::node_data::mark_defined()'
+[16.556s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node_ref::set_null()':
+[16.556s] OrderOptimizer.cpp:(.text._ZN4YAML6detail8node_ref8set_nullEv[_ZN4YAML6detail8node_ref8set_nullEv]+0x20): undefined reference to `YAML::detail::node_data::set_null()'
+[16.560s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node_ref::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[16.560s] OrderOptimizer.cpp:(.text._ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x2e): undefined reference to `YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[16.563s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Node::EnsureNodeExists() const':
+[16.563s] OrderOptimizer.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[16.565s] /usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'
+[16.567s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Node::Mark() const':
+[16.567s] OrderOptimizer.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[16.569s] /usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'
+[16.571s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Node::Type() const':
+[16.571s] OrderOptimizer.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[16.573s] /usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'
+[16.575s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Node::Scalar[abi:cxx11]() const':
+[16.575s] OrderOptimizer.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[16.577s] /usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'
+[16.579s] /usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x7d): undefined reference to `YAML::detail::node_data::empty_scalar[abi:cxx11]()'
+[16.582s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `OrderOptimizerNode::searchOrderInFiles(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[16.582s] OrderOptimizer.cpp:(.text._ZN18OrderOptimizerNode18searchOrderInFilesEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN18OrderOptimizerNode18searchOrderInFilesEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x310): undefined reference to `YAML::Load(std::istream&)'
+[16.586s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `unsigned int YAML::Node::as<unsigned int>() const':
+[16.586s] OrderOptimizer.cpp:(.text._ZNK4YAML4Node2asIjEET_v[_ZNK4YAML4Node2asIjEET_v]+0x53): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[16.589s] /usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node2asIjEET_v[_ZNK4YAML4Node2asIjEET_v]+0x5d): undefined reference to `typeinfo for YAML::InvalidNode'
+[16.595s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::TypedBadConversion<unsigned int>::~TypedBadConversion()':
+[16.595s] OrderOptimizer.cpp:(.text._ZN4YAML18TypedBadConversionIjED2Ev[_ZN4YAML18TypedBadConversionIjED5Ev]+0x26): undefined reference to `YAML::BadConversion::~BadConversion()'
+[16.600s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [6]>(char const (&) [6], std::shared_ptr<YAML::detail::memory_holder>)':
+[16.600s] OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd3): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+[16.602s] /usr/bin/ld: OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x103): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[16.604s] /usr/bin/ld: OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10d): undefined reference to `typeinfo for YAML::BadSubscript'
+[16.607s] /usr/bin/ld: OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1fb): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+[16.613s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [6]>(YAML::Mark const&, char const (&) [6])':
+[16.613s] OrderOptimizer.cpp:(.text._ZN4YAML12BadSubscriptC2IA6_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA6_cEERKNS_4MarkERKT_]+0x61): undefined reference to `vtable for YAML::BadSubscript'
+[16.616s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [6]>(char const (&) [6], std::shared_ptr<YAML::detail::memory_holder>)':
+[16.616s] OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x69): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+[16.632s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIjEE[_ZTIN4YAML18TypedBadConversionIjEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+[16.642s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o:(.data.rel.local.DW.ref._ZTIN4YAML9ExceptionE[DW.ref._ZTIN4YAML9ExceptionE]+0x0): undefined reference to `typeinfo for YAML::Exception'
+[16.701s] /usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+[16.711s] collect2: error: ld returned 1 exit status
+[16.714s] gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:191: orderoptimizer] Error 1
+[16.714s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2
+[16.715s] gmake: *** [Makefile:146: all] Error 2
+[16.722s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '2': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6

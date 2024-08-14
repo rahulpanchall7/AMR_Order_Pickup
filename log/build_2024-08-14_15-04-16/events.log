@@ -1,0 +1,210 @@
+[0.000000] (-) TimerEvent: {}
+[0.000790] (-) JobUnselected: {'identifier': 'interfaces'}
+[0.000953] (amr_pkg) JobQueued: {'identifier': 'amr_pkg', 'dependencies': OrderedDict([('interfaces', '/home/rahul/ros2_ws/install/interfaces')])}
+[0.000991] (amr_pkg) JobStarted: {'identifier': 'amr_pkg'}
+[0.015401] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'cmake'}
+[0.016576] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'build'}
+[0.017383] (amr_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rahul/ros2_ws/build/amr_pkg', '--', '-j6', '-l6'], 'cwd': '/home/rahul/ros2_ws/build/amr_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rahul'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rahul/ros2_ws/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rahul'), ('OLDPWD', '/home/rahul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '104744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rahul/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rahul'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rahul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rahul-VirtualBox:@/tmp/.ICE-unix/946,unix/rahul-VirtualBox:/tmp/.ICE-unix/946'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d22033d2_ff78_4be4_8d6c_c1db2595bc4b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4DL3R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1604'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rahul/ros2_ws/build/amr_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble')]), 'shell': False}
+[0.084995] (amr_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target orderoptimizer\x1b[0m\n'}
+[0.099745] (-) TimerEvent: {}
+[0.110732] (amr_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o\x1b[0m\n'}
+[0.200801] (-) TimerEvent: {}
+[0.306484] (-) TimerEvent: {}
+[0.406956] (-) TimerEvent: {}
+[0.508607] (-) TimerEvent: {}
+[0.609540] (-) TimerEvent: {}
+[0.710135] (-) TimerEvent: {}
+[0.811108] (-) TimerEvent: {}
+[0.911855] (-) TimerEvent: {}
+[1.012945] (-) TimerEvent: {}
+[1.113492] (-) TimerEvent: {}
+[1.214221] (-) TimerEvent: {}
+[1.315184] (-) TimerEvent: {}
+[1.415989] (-) TimerEvent: {}
+[1.516411] (-) TimerEvent: {}
+[1.617021] (-) TimerEvent: {}
+[1.717698] (-) TimerEvent: {}
+[1.819189] (-) TimerEvent: {}
+[1.920024] (-) TimerEvent: {}
+[2.020885] (-) TimerEvent: {}
+[2.147478] (-) TimerEvent: {}
+[2.248958] (-) TimerEvent: {}
+[2.350368] (-) TimerEvent: {}
+[2.451244] (-) TimerEvent: {}
+[2.552014] (-) TimerEvent: {}
+[2.652609] (-) TimerEvent: {}
+[2.753579] (-) TimerEvent: {}
+[2.854342] (-) TimerEvent: {}
+[2.955254] (-) TimerEvent: {}
+[3.056276] (-) TimerEvent: {}
+[3.157346] (-) TimerEvent: {}
+[3.258184] (-) TimerEvent: {}
+[3.358866] (-) TimerEvent: {}
+[3.459715] (-) TimerEvent: {}
+[3.560666] (-) TimerEvent: {}
+[3.661520] (-) TimerEvent: {}
+[3.713022] (amr_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OrderOptimizerNode::generateAndPublishMarkers(uint32_t, const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.713840] (amr_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:131:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdescription\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.714073] (amr_pkg) StderrLine: {'line': b'  131 | rateAndPublishMarkers(uint32_t order_id, \x1b[01;35m\x1b[Kconst std::string& description\x1b[m\x1b[K) {\n'}
+[3.714233] (amr_pkg) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.714386] (amr_pkg) StderrLine: {'line': b'\n'}
+[3.787776] (-) TimerEvent: {}
+[3.932361] (-) TimerEvent: {}
+[4.108501] (-) TimerEvent: {}
+[4.220584] (-) TimerEvent: {}
+[4.321515] (-) TimerEvent: {}
+[4.428131] (-) TimerEvent: {}
+[4.529171] (-) TimerEvent: {}
+[4.629999] (-) TimerEvent: {}
+[4.730639] (-) TimerEvent: {}
+[4.833196] (-) TimerEvent: {}
+[4.935049] (-) TimerEvent: {}
+[5.035951] (-) TimerEvent: {}
+[5.137700] (-) TimerEvent: {}
+[5.240060] (-) TimerEvent: {}
+[5.341395] (-) TimerEvent: {}
+[5.441848] (-) TimerEvent: {}
+[5.542708] (-) TimerEvent: {}
+[5.643471] (-) TimerEvent: {}
+[5.744635] (-) TimerEvent: {}
+[5.845633] (-) TimerEvent: {}
+[5.946498] (-) TimerEvent: {}
+[6.047628] (-) TimerEvent: {}
+[6.148391] (-) TimerEvent: {}
+[6.249261] (-) TimerEvent: {}
+[6.350349] (-) TimerEvent: {}
+[6.451038] (-) TimerEvent: {}
+[6.553160] (-) TimerEvent: {}
+[6.653656] (-) TimerEvent: {}
+[6.754304] (-) TimerEvent: {}
+[6.855232] (-) TimerEvent: {}
+[6.956961] (-) TimerEvent: {}
+[7.057553] (-) TimerEvent: {}
+[7.158396] (-) TimerEvent: {}
+[7.258989] (-) TimerEvent: {}
+[7.360121] (-) TimerEvent: {}
+[7.461225] (-) TimerEvent: {}
+[7.562184] (-) TimerEvent: {}
+[7.663401] (-) TimerEvent: {}
+[7.764927] (-) TimerEvent: {}
+[7.865600] (-) TimerEvent: {}
+[7.966207] (-) TimerEvent: {}
+[8.067006] (-) TimerEvent: {}
+[8.167732] (-) TimerEvent: {}
+[8.268643] (-) TimerEvent: {}
+[8.369069] (-) TimerEvent: {}
+[8.470227] (-) TimerEvent: {}
+[8.570976] (-) TimerEvent: {}
+[8.671553] (-) TimerEvent: {}
+[8.772215] (-) TimerEvent: {}
+[8.872780] (-) TimerEvent: {}
+[8.973767] (-) TimerEvent: {}
+[9.075148] (-) TimerEvent: {}
+[9.176222] (-) TimerEvent: {}
+[9.276746] (-) TimerEvent: {}
+[9.377720] (-) TimerEvent: {}
+[9.478643] (-) TimerEvent: {}
+[9.579545] (-) TimerEvent: {}
+[9.681127] (-) TimerEvent: {}
+[9.781557] (-) TimerEvent: {}
+[9.882642] (-) TimerEvent: {}
+[9.983642] (-) TimerEvent: {}
+[10.084731] (-) TimerEvent: {}
+[10.185468] (-) TimerEvent: {}
+[10.287162] (-) TimerEvent: {}
+[10.390510] (-) TimerEvent: {}
+[10.491522] (-) TimerEvent: {}
+[10.594002] (-) TimerEvent: {}
+[10.694842] (-) TimerEvent: {}
+[10.795389] (-) TimerEvent: {}
+[10.895957] (-) TimerEvent: {}
+[10.996782] (-) TimerEvent: {}
+[11.097722] (-) TimerEvent: {}
+[11.198483] (-) TimerEvent: {}
+[11.298953] (-) TimerEvent: {}
+[11.411342] (-) TimerEvent: {}
+[11.512195] (-) TimerEvent: {}
+[11.612915] (-) TimerEvent: {}
+[11.713400] (-) TimerEvent: {}
+[11.814160] (-) TimerEvent: {}
+[11.914851] (-) TimerEvent: {}
+[12.017627] (-) TimerEvent: {}
+[12.118451] (-) TimerEvent: {}
+[12.219916] (-) TimerEvent: {}
+[12.320761] (-) TimerEvent: {}
+[12.421538] (-) TimerEvent: {}
+[12.523298] (-) TimerEvent: {}
+[12.624598] (-) TimerEvent: {}
+[12.725677] (-) TimerEvent: {}
+[12.826878] (-) TimerEvent: {}
+[12.927347] (-) TimerEvent: {}
+[13.028121] (-) TimerEvent: {}
+[13.128919] (-) TimerEvent: {}
+[13.229789] (-) TimerEvent: {}
+[13.331175] (-) TimerEvent: {}
+[13.431921] (-) TimerEvent: {}
+[13.532812] (-) TimerEvent: {}
+[13.633468] (-) TimerEvent: {}
+[13.734352] (-) TimerEvent: {}
+[13.835026] (-) TimerEvent: {}
+[13.935740] (-) TimerEvent: {}
+[14.036604] (-) TimerEvent: {}
+[14.137959] (-) TimerEvent: {}
+[14.238693] (-) TimerEvent: {}
+[14.339673] (-) TimerEvent: {}
+[14.440717] (-) TimerEvent: {}
+[14.541998] (-) TimerEvent: {}
+[14.642802] (-) TimerEvent: {}
+[14.743664] (-) TimerEvent: {}
+[14.844928] (-) TimerEvent: {}
+[14.946134] (-) TimerEvent: {}
+[15.046996] (-) TimerEvent: {}
+[15.148849] (-) TimerEvent: {}
+[15.249709] (-) TimerEvent: {}
+[15.350495] (-) TimerEvent: {}
+[15.451244] (-) TimerEvent: {}
+[15.552219] (-) TimerEvent: {}
+[15.654488] (-) TimerEvent: {}
+[15.755233] (-) TimerEvent: {}
+[15.856227] (-) TimerEvent: {}
+[15.957038] (-) TimerEvent: {}
+[16.057962] (-) TimerEvent: {}
+[16.160139] (-) TimerEvent: {}
+[16.260996] (-) TimerEvent: {}
+[16.361718] (-) TimerEvent: {}
+[16.462063] (-) TimerEvent: {}
+[16.469767] (amr_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable orderoptimizer\x1b[0m\n'}
+[16.562494] (-) TimerEvent: {}
+[16.877175] (-) TimerEvent: {}
+[17.001811] (-) TimerEvent: {}
+[17.153041] (-) TimerEvent: {}
+[17.273960] (-) TimerEvent: {}
+[17.422408] (-) TimerEvent: {}
+[17.529230] (-) TimerEvent: {}
+[17.633539] (-) TimerEvent: {}
+[17.647490] (amr_pkg) StdoutLine: {'line': b'[100%] Built target orderoptimizer\n'}
+[17.666472] (amr_pkg) CommandEnded: {'returncode': 0}
+[17.709955] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'install'}
+[17.722053] (amr_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rahul/ros2_ws/build/amr_pkg'], 'cwd': '/home/rahul/ros2_ws/build/amr_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rahul'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rahul/ros2_ws/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rahul'), ('OLDPWD', '/home/rahul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '104744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rahul/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rahul'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rahul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rahul-VirtualBox:@/tmp/.ICE-unix/946,unix/rahul-VirtualBox:/tmp/.ICE-unix/946'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d22033d2_ff78_4be4_8d6c_c1db2595bc4b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4DL3R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1604'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rahul/ros2_ws/build/amr_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble')]), 'shell': False}
+[17.733987] (-) TimerEvent: {}
+[17.735764] (amr_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.736099] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer\n'}
+[17.748674] (amr_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer" to ""\n'}
+[17.749293] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg\n'}
+[17.749552] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg\n'}
+[17.749995] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh\n'}
+[17.750101] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.dsv\n'}
+[17.750180] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.sh\n'}
+[17.750243] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.dsv\n'}
+[17.750305] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.bash\n'}
+[17.750356] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.sh\n'}
+[17.750408] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.zsh\n'}
+[17.750458] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.dsv\n'}
+[17.750508] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.dsv\n'}
+[17.750559] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/packages/amr_pkg\n'}
+[17.750611] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig.cmake\n'}
+[17.750661] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig-version.cmake\n'}
+[17.750712] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.xml\n'}
+[17.754047] (amr_pkg) CommandEnded: {'returncode': 0}
+[17.828882] (amr_pkg) JobEnded: {'identifier': 'amr_pkg', 'rc': 0}
+[17.831196] (-) EventReactorShutdown: {}

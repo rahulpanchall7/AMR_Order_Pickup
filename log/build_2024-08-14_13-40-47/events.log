@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000636] (-) JobUnselected: {'identifier': 'interfaces'}
+[0.000832] (amr_pkg) JobQueued: {'identifier': 'amr_pkg', 'dependencies': OrderedDict([('interfaces', '/home/rahul/ros2_ws/install/interfaces')])}
+[0.000873] (amr_pkg) JobStarted: {'identifier': 'amr_pkg'}
+[0.015657] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'cmake'}
+[0.016551] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'build'}
+[0.017513] (amr_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rahul/ros2_ws/build/amr_pkg', '--', '-j6', '-l6'], 'cwd': '/home/rahul/ros2_ws/build/amr_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rahul'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rahul/ros2_ws/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rahul'), ('OLDPWD', '/home/rahul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '104744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rahul/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rahul'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rahul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rahul-VirtualBox:@/tmp/.ICE-unix/946,unix/rahul-VirtualBox:/tmp/.ICE-unix/946'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d22033d2_ff78_4be4_8d6c_c1db2595bc4b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4DL3R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1604'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rahul/ros2_ws/build/amr_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble')]), 'shell': False}
+[0.096968] (amr_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target orderoptimizer\x1b[0m\n'}
+[0.115898] (-) TimerEvent: {}
+[0.129499] (amr_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o\x1b[0m\n'}
+[0.216300] (-) TimerEvent: {}
+[0.319913] (-) TimerEvent: {}
+[0.425376] (-) TimerEvent: {}
+[0.526160] (-) TimerEvent: {}
+[0.627310] (-) TimerEvent: {}
+[0.728122] (-) TimerEvent: {}
+[0.828898] (-) TimerEvent: {}
+[0.929606] (-) TimerEvent: {}
+[1.036238] (-) TimerEvent: {}
+[1.138322] (-) TimerEvent: {}
+[1.239178] (-) TimerEvent: {}
+[1.340412] (-) TimerEvent: {}
+[1.441317] (-) TimerEvent: {}
+[1.542524] (-) TimerEvent: {}
+[1.643476] (-) TimerEvent: {}
+[1.745311] (-) TimerEvent: {}
+[1.846002] (-) TimerEvent: {}
+[1.946851] (-) TimerEvent: {}
+[2.047300] (-) TimerEvent: {}
+[2.147923] (-) TimerEvent: {}
+[2.248575] (-) TimerEvent: {}
+[2.349460] (-) TimerEvent: {}
+[2.450483] (-) TimerEvent: {}
+[2.551084] (-) TimerEvent: {}
+[2.652063] (-) TimerEvent: {}
+[2.752933] (-) TimerEvent: {}
+[2.853347] (-) TimerEvent: {}
+[2.964831] (-) TimerEvent: {}
+[3.072996] (-) TimerEvent: {}
+[3.189397] (-) TimerEvent: {}
+[3.312067] (-) TimerEvent: {}
+[3.413971] (-) TimerEvent: {}
+[3.538245] (-) TimerEvent: {}
+[3.640612] (-) TimerEvent: {}
+[3.742494] (-) TimerEvent: {}
+[3.847189] (-) TimerEvent: {}
+[3.959170] (-) TimerEvent: {}
+[4.061998] (-) TimerEvent: {}
+[4.183677] (-) TimerEvent: {}
+[4.295720] (-) TimerEvent: {}
+[4.407697] (-) TimerEvent: {}
+[4.554111] (-) TimerEvent: {}
+[4.655000] (-) TimerEvent: {}
+[4.777039] (-) TimerEvent: {}
+[4.891401] (-) TimerEvent: {}
+[5.051929] (-) TimerEvent: {}
+[5.171276] (-) TimerEvent: {}
+[5.299118] (-) TimerEvent: {}
+[5.411177] (-) TimerEvent: {}
+[5.523247] (-) TimerEvent: {}
+[5.635322] (-) TimerEvent: {}
+[5.750861] (-) TimerEvent: {}
+[5.920935] (-) TimerEvent: {}
+[6.049044] (-) TimerEvent: {}
+[6.221331] (-) TimerEvent: {}
+[6.333682] (-) TimerEvent: {}
+[6.508839] (-) TimerEvent: {}
+[6.630147] (-) TimerEvent: {}
+[6.748949] (-) TimerEvent: {}
+[6.853401] (-) TimerEvent: {}
+[7.125689] (-) TimerEvent: {}
+[7.231196] (-) TimerEvent: {}
+[7.391229] (-) TimerEvent: {}
+[7.492380] (-) TimerEvent: {}
+[7.646802] (-) TimerEvent: {}
+[7.777291] (-) TimerEvent: {}
+[7.878275] (-) TimerEvent: {}
+[7.979520] (-) TimerEvent: {}
+[8.091633] (-) TimerEvent: {}
+[8.208052] (-) TimerEvent: {}
+[8.681496] (-) TimerEvent: {}
+[8.795491] (-) TimerEvent: {}
+[8.896088] (-) TimerEvent: {}
+[9.053227] (-) TimerEvent: {}
+[9.156491] (-) TimerEvent: {}
+[9.270573] (-) TimerEvent: {}
+[9.408551] (-) TimerEvent: {}
+[9.579812] (-) TimerEvent: {}
+[9.694023] (-) TimerEvent: {}
+[9.828480] (-) TimerEvent: {}
+[9.972642] (-) TimerEvent: {}
+[10.110803] (-) TimerEvent: {}
+[10.247670] (-) TimerEvent: {}
+[10.385673] (-) TimerEvent: {}
+[10.486585] (-) TimerEvent: {}
+[10.589566] (-) TimerEvent: {}
+[10.744370] (-) TimerEvent: {}
+[10.854187] (-) TimerEvent: {}
+[10.970043] (-) TimerEvent: {}
+[11.112590] (-) TimerEvent: {}
+[11.213918] (-) TimerEvent: {}
+[11.401664] (-) TimerEvent: {}
+[11.548573] (-) TimerEvent: {}
+[11.668884] (-) TimerEvent: {}
+[11.802476] (-) TimerEvent: {}
+[11.903837] (-) TimerEvent: {}
+[12.004295] (-) TimerEvent: {}
+[12.112983] (-) TimerEvent: {}
+[12.214045] (-) TimerEvent: {}
+[12.315780] (-) TimerEvent: {}
+[12.422869] (-) TimerEvent: {}
+[12.523559] (-) TimerEvent: {}
+[12.625021] (-) TimerEvent: {}
+[12.725827] (-) TimerEvent: {}
+[12.828581] (-) TimerEvent: {}
+[12.985145] (-) TimerEvent: {}
+[13.101611] (-) TimerEvent: {}
+[13.248524] (-) TimerEvent: {}
+[13.378973] (-) TimerEvent: {}
+[13.490948] (-) TimerEvent: {}
+[13.624200] (-) TimerEvent: {}
+[13.727485] (-) TimerEvent: {}
+[13.840297] (-) TimerEvent: {}
+[14.104600] (-) TimerEvent: {}
+[14.225591] (-) TimerEvent: {}
+[14.326120] (-) TimerEvent: {}
+[14.446374] (-) TimerEvent: {}
+[14.636834] (-) TimerEvent: {}
+[14.763831] (-) TimerEvent: {}
+[14.864528] (-) TimerEvent: {}
+[14.965448] (-) TimerEvent: {}
+[15.065995] (-) TimerEvent: {}
+[15.166895] (-) TimerEvent: {}
+[15.267777] (-) TimerEvent: {}
+[15.369022] (-) TimerEvent: {}
+[15.469850] (-) TimerEvent: {}
+[15.571146] (-) TimerEvent: {}
+[15.671790] (-) TimerEvent: {}
+[15.723173] (amr_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable orderoptimizer\x1b[0m\n'}
+[15.772139] (-) TimerEvent: {}
+[15.872996] (-) TimerEvent: {}
+[15.973942] (-) TimerEvent: {}
+[16.074469] (-) TimerEvent: {}
+[16.175087] (-) TimerEvent: {}
+[16.275592] (-) TimerEvent: {}
+[16.376996] (-) TimerEvent: {}
+[16.477745] (-) TimerEvent: {}
+[16.579961] (-) TimerEvent: {}
+[16.680962] (-) TimerEvent: {}
+[16.774450] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `OrderOptimizerNode::searchOrderInFiles(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[16.774961] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN18OrderOptimizerNode18searchOrderInFilesEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN18OrderOptimizerNode18searchOrderInFilesEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x4a5): undefined reference to `YAML::Load(std::istream&)'\n"}
+[16.783570] (-) TimerEvent: {}
+[16.874216] (amr_pkg) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[16.877253] (amr_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:191: orderoptimizer] Error 1\n'}
+[16.878123] (amr_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2\n'}
+[16.878461] (amr_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.881742] (amr_pkg) CommandEnded: {'returncode': 2}
+[16.883791] (-) TimerEvent: {}
+[16.973621] (amr_pkg) JobEnded: {'identifier': 'amr_pkg', 'rc': 2}
+[16.984724] (-) TimerEvent: {}
+[16.985876] (-) EventReactorShutdown: {}

@@ -1,0 +1,30 @@
+[0.023s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[0.112s] [ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[3.686s] [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::searchOrderInFiles(uint32_t, const string&)[m[K’:
+[3.686s] [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:60:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_order_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.686s]    60 |     void searchOrderInFiles([01;35m[Kuint32_t target_order_id[m[K, const std::string &orders_folder_path) {
+[3.686s]       |                             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[15.255s] [100%] [32m[1mLinking CXX executable orderoptimizer[0m
+[16.380s] [100%] Built target orderoptimizer
+[16.404s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[16.475s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_pkg
+[16.490s] -- Install configuration: ""
+[16.490s] -- Installing: /home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer
+[16.505s] -- Set runtime path of "/home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer" to ""
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.dsv
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.sh
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.dsv
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.bash
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.sh
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.zsh
+[16.506s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.dsv
+[16.506s] -- Installing: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.dsv
+[16.507s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/packages/amr_pkg
+[16.507s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig.cmake
+[16.507s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig-version.cmake
+[16.507s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.xml
+[16.512s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_pkg

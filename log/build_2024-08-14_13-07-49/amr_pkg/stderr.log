@@ -1,0 +1,7 @@
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::searchOrderInFiles(uint32_t, const string&)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:88:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   88 |         [01;31m[K}[m[K
+      |         [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:76: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

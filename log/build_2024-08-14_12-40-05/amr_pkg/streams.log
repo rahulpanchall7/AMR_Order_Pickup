@@ -1,0 +1,14 @@
+[0.025s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[0.119s] [35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[0.152s] [ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[4.115s] [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::searchOrderInFiles(uint32_t, const string&)[m[K’:
+[4.116s] [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:60:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_order_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.116s]    60 |     void searchOrderInFiles([01;35m[Kuint32_t target_order_id[m[K, const std::string &orders_folder_path) {
+[4.116s]       |                             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[16.144s] [100%] [32m[1mLinking CXX executable orderoptimizer[0m
+[17.122s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o:(.data.rel.local.DW.ref._ZTIN4YAML9ExceptionE[DW.ref._ZTIN4YAML9ExceptionE]+0x0): undefined reference to `typeinfo for YAML::Exception'
+[17.191s] collect2: error: ld returned 1 exit status
+[17.195s] gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:191: orderoptimizer] Error 1
+[17.195s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2
+[17.198s] gmake: *** [Makefile:146: all] Error 2
+[17.202s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '2': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6

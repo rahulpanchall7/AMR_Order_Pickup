@@ -1,0 +1,11 @@
+[0.021s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[0.129s] [ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[15.723s] [100%] [32m[1mLinking CXX executable orderoptimizer[0m
+[16.774s] /usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `OrderOptimizerNode::searchOrderInFiles(unsigned int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[16.774s] OrderOptimizer.cpp:(.text._ZN18OrderOptimizerNode18searchOrderInFilesEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN18OrderOptimizerNode18searchOrderInFilesEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x4a5): undefined reference to `YAML::Load(std::istream&)'
+[16.874s] collect2: error: ld returned 1 exit status
+[16.877s] gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:191: orderoptimizer] Error 1
+[16.877s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2
+[16.878s] gmake: *** [Makefile:146: all] Error 2
+[16.881s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '2': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6

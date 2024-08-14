@@ -1,6 +1,0 @@
-Invoking command in '/home/rahul/ros2_ws/build/amr_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rahul/ros2_ws/src/amr_interfaces -DCMAKE_INSTALL_PREFIX=/home/rahul/ros2_ws/install/amr_interfaces
-Invoked command in '/home/rahul/ros2_ws/build/amr_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rahul/ros2_ws/src/amr_interfaces -DCMAKE_INSTALL_PREFIX=/home/rahul/ros2_ws/install/amr_interfaces
-Invoking command in '/home/rahul/ros2_ws/build/amr_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_interfaces -- -j6 -l6
-Invoked command in '/home/rahul/ros2_ws/build/amr_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_interfaces -- -j6 -l6
-Invoking command in '/home/rahul/ros2_ws/build/amr_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_interfaces
-Invoked command in '/home/rahul/ros2_ws/build/amr_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_interfaces

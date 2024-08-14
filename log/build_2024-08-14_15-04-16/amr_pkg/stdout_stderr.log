@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::generateAndPublishMarkers(uint32_t, const string&)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:131:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdescription[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  131 | rateAndPublishMarkers(uint32_t order_id, [01;35m[Kconst std::string& description[m[K) {
+      |                                          [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+
+[100%] [32m[1mLinking CXX executable orderoptimizer[0m
+[100%] Built target orderoptimizer
+-- Install configuration: ""
+-- Installing: /home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer
+-- Set runtime path of "/home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer" to ""
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.sh
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.dsv
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.bash
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.sh
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.zsh
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.dsv
+-- Installing: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.dsv
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/packages/amr_pkg
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig.cmake
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig-version.cmake
+-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.xml

@@ -1,0 +1,234 @@
+[0.000000] (-) TimerEvent: {}
+[0.004422] (-) JobUnselected: {'identifier': 'interfaces'}
+[0.004572] (amr_pkg) JobQueued: {'identifier': 'amr_pkg', 'dependencies': OrderedDict([('interfaces', '/home/rahul/ros2_ws/install/interfaces')])}
+[0.004696] (amr_pkg) JobStarted: {'identifier': 'amr_pkg'}
+[0.019383] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'cmake'}
+[0.021724] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'build'}
+[0.021889] (amr_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rahul/ros2_ws/build/amr_pkg', '--', '-j6', '-l6'], 'cwd': '/home/rahul/ros2_ws/build/amr_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rahul'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rahul/ros2_ws/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rahul'), ('OLDPWD', '/home/rahul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '104744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rahul/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rahul'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rahul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rahul-VirtualBox:@/tmp/.ICE-unix/946,unix/rahul-VirtualBox:/tmp/.ICE-unix/946'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d22033d2_ff78_4be4_8d6c_c1db2595bc4b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4DL3R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1604'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rahul/ros2_ws/build/amr_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099054] (amr_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target orderoptimizer\x1b[0m\n'}
+[0.106722] (-) TimerEvent: {}
+[0.129152] (amr_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o\x1b[0m\n'}
+[0.207640] (-) TimerEvent: {}
+[0.308437] (-) TimerEvent: {}
+[0.409576] (-) TimerEvent: {}
+[0.511006] (-) TimerEvent: {}
+[0.611521] (-) TimerEvent: {}
+[0.712155] (-) TimerEvent: {}
+[0.813023] (-) TimerEvent: {}
+[0.913849] (-) TimerEvent: {}
+[1.015805] (-) TimerEvent: {}
+[1.116418] (-) TimerEvent: {}
+[1.217397] (-) TimerEvent: {}
+[1.318184] (-) TimerEvent: {}
+[1.420781] (-) TimerEvent: {}
+[1.522344] (-) TimerEvent: {}
+[1.622835] (-) TimerEvent: {}
+[1.723313] (-) TimerEvent: {}
+[1.823794] (-) TimerEvent: {}
+[1.924892] (-) TimerEvent: {}
+[2.025597] (-) TimerEvent: {}
+[2.126576] (-) TimerEvent: {}
+[2.227822] (-) TimerEvent: {}
+[2.329027] (-) TimerEvent: {}
+[2.430412] (-) TimerEvent: {}
+[2.531673] (-) TimerEvent: {}
+[2.632395] (-) TimerEvent: {}
+[2.733773] (-) TimerEvent: {}
+[2.835868] (-) TimerEvent: {}
+[2.937282] (-) TimerEvent: {}
+[3.038034] (-) TimerEvent: {}
+[3.138901] (-) TimerEvent: {}
+[3.239861] (-) TimerEvent: {}
+[3.340913] (-) TimerEvent: {}
+[3.442287] (-) TimerEvent: {}
+[3.542940] (-) TimerEvent: {}
+[3.644025] (-) TimerEvent: {}
+[3.744997] (-) TimerEvent: {}
+[3.845959] (-) TimerEvent: {}
+[3.947436] (-) TimerEvent: {}
+[4.048583] (-) TimerEvent: {}
+[4.149332] (-) TimerEvent: {}
+[4.250366] (-) TimerEvent: {}
+[4.350942] (-) TimerEvent: {}
+[4.451595] (-) TimerEvent: {}
+[4.553236] (-) TimerEvent: {}
+[4.654092] (-) TimerEvent: {}
+[4.755436] (-) TimerEvent: {}
+[4.856323] (-) TimerEvent: {}
+[4.957094] (-) TimerEvent: {}
+[5.059299] (-) TimerEvent: {}
+[5.159850] (-) TimerEvent: {}
+[5.260565] (-) TimerEvent: {}
+[5.360994] (-) TimerEvent: {}
+[5.461586] (-) TimerEvent: {}
+[5.562054] (-) TimerEvent: {}
+[5.663023] (-) TimerEvent: {}
+[5.763512] (-) TimerEvent: {}
+[5.864444] (-) TimerEvent: {}
+[5.964921] (-) TimerEvent: {}
+[6.065614] (-) TimerEvent: {}
+[6.167209] (-) TimerEvent: {}
+[6.267600] (-) TimerEvent: {}
+[6.368346] (-) TimerEvent: {}
+[6.469183] (-) TimerEvent: {}
+[6.569722] (-) TimerEvent: {}
+[6.671432] (-) TimerEvent: {}
+[6.772060] (-) TimerEvent: {}
+[6.872888] (-) TimerEvent: {}
+[6.973669] (-) TimerEvent: {}
+[7.074485] (-) TimerEvent: {}
+[7.175050] (-) TimerEvent: {}
+[7.276013] (-) TimerEvent: {}
+[7.376449] (-) TimerEvent: {}
+[7.477029] (-) TimerEvent: {}
+[7.577952] (-) TimerEvent: {}
+[7.680899] (-) TimerEvent: {}
+[7.781565] (-) TimerEvent: {}
+[7.882713] (-) TimerEvent: {}
+[7.985588] (-) TimerEvent: {}
+[8.087092] (-) TimerEvent: {}
+[8.187769] (-) TimerEvent: {}
+[8.288748] (-) TimerEvent: {}
+[8.389810] (-) TimerEvent: {}
+[8.490448] (-) TimerEvent: {}
+[8.590920] (-) TimerEvent: {}
+[8.692188] (-) TimerEvent: {}
+[8.792802] (-) TimerEvent: {}
+[8.896879] (-) TimerEvent: {}
+[9.025760] (-) TimerEvent: {}
+[9.126456] (-) TimerEvent: {}
+[9.226840] (-) TimerEvent: {}
+[9.328256] (-) TimerEvent: {}
+[9.431786] (-) TimerEvent: {}
+[9.532276] (-) TimerEvent: {}
+[9.632975] (-) TimerEvent: {}
+[9.733760] (-) TimerEvent: {}
+[9.834614] (-) TimerEvent: {}
+[9.938018] (-) TimerEvent: {}
+[10.038788] (-) TimerEvent: {}
+[10.139216] (-) TimerEvent: {}
+[10.240177] (-) TimerEvent: {}
+[10.341614] (-) TimerEvent: {}
+[10.442322] (-) TimerEvent: {}
+[10.544288] (-) TimerEvent: {}
+[10.644802] (-) TimerEvent: {}
+[10.752931] (-) TimerEvent: {}
+[10.853567] (-) TimerEvent: {}
+[10.954350] (-) TimerEvent: {}
+[11.055053] (-) TimerEvent: {}
+[11.155821] (-) TimerEvent: {}
+[11.256442] (-) TimerEvent: {}
+[11.357166] (-) TimerEvent: {}
+[11.458502] (-) TimerEvent: {}
+[11.559536] (-) TimerEvent: {}
+[11.660546] (-) TimerEvent: {}
+[11.761276] (-) TimerEvent: {}
+[11.862717] (-) TimerEvent: {}
+[11.963923] (-) TimerEvent: {}
+[12.064779] (-) TimerEvent: {}
+[12.165995] (-) TimerEvent: {}
+[12.266757] (-) TimerEvent: {}
+[12.367718] (-) TimerEvent: {}
+[12.468500] (-) TimerEvent: {}
+[12.569355] (-) TimerEvent: {}
+[12.670096] (-) TimerEvent: {}
+[12.770673] (-) TimerEvent: {}
+[12.871505] (-) TimerEvent: {}
+[12.972376] (-) TimerEvent: {}
+[13.079269] (-) TimerEvent: {}
+[13.214407] (-) TimerEvent: {}
+[13.326445] (-) TimerEvent: {}
+[13.470471] (-) TimerEvent: {}
+[13.584585] (-) TimerEvent: {}
+[13.706163] (-) TimerEvent: {}
+[13.834235] (-) TimerEvent: {}
+[13.934932] (-) TimerEvent: {}
+[14.035718] (-) TimerEvent: {}
+[14.136550] (-) TimerEvent: {}
+[14.237587] (-) TimerEvent: {}
+[14.338479] (-) TimerEvent: {}
+[14.439324] (-) TimerEvent: {}
+[14.539825] (-) TimerEvent: {}
+[14.640575] (-) TimerEvent: {}
+[14.741359] (-) TimerEvent: {}
+[14.842235] (-) TimerEvent: {}
+[14.943534] (-) TimerEvent: {}
+[15.044275] (-) TimerEvent: {}
+[15.145073] (-) TimerEvent: {}
+[15.246085] (-) TimerEvent: {}
+[15.347226] (-) TimerEvent: {}
+[15.448113] (-) TimerEvent: {}
+[15.548889] (-) TimerEvent: {}
+[15.649510] (-) TimerEvent: {}
+[15.750273] (-) TimerEvent: {}
+[15.850982] (-) TimerEvent: {}
+[15.888087] (amr_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable orderoptimizer\x1b[0m\n'}
+[15.951769] (-) TimerEvent: {}
+[16.053064] (-) TimerEvent: {}
+[16.154900] (-) TimerEvent: {}
+[16.256588] (-) TimerEvent: {}
+[16.357663] (-) TimerEvent: {}
+[16.458409] (-) TimerEvent: {}
+[16.559637] (-) TimerEvent: {}
+[16.664163] (-) TimerEvent: {}
+[16.768425] (-) TimerEvent: {}
+[16.869369] (-) TimerEvent: {}
+[16.918981] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: warning: relocation against `_ZTVN4YAML9ExceptionE' in read-only section `.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]'\n"}
+[16.969791] (-) TimerEvent: {}
+[16.976252] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Exception::Exception(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[16.976691] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x61): undefined reference to `vtable for YAML::Exception'\n"}
+[16.978964] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::RepresentationException::RepresentationException(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[16.979198] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x32): undefined reference to `vtable for YAML::RepresentationException'\n"}
+[16.981430] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::InvalidNode::InvalidNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[16.981743] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x71): undefined reference to `vtable for YAML::InvalidNode'\n"}
+[16.983776] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::BadConversion::BadConversion(YAML::Mark const&)':\n"}
+[16.984016] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x7c): undefined reference to `vtable for YAML::BadConversion'\n"}
+[16.987959] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::memory_holder::create_node()':\n"}
+[16.988487] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML6detail13memory_holder11create_nodeEv[_ZN4YAML6detail13memory_holder11create_nodeEv]+0x20): undefined reference to `YAML::detail::memory::create_node()'\n"}
+[16.991119] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node_ref::mark_defined()':\n"}
+[16.991363] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML6detail8node_ref12mark_definedEv[_ZN4YAML6detail8node_ref12mark_definedEv]+0x20): undefined reference to `YAML::detail::node_data::mark_defined()'\n"}
+[16.993765] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node_ref::set_null()':\n"}
+[16.994044] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML6detail8node_ref8set_nullEv[_ZN4YAML6detail8node_ref8set_nullEv]+0x20): undefined reference to `YAML::detail::node_data::set_null()'\n"}
+[16.997025] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node_ref::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[16.997464] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x2e): undefined reference to `YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[17.001436] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Node::EnsureNodeExists() const':\n"}
+[17.001770] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[17.004634] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[17.009752] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Node::Mark() const':\n"}
+[17.010265] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[17.014236] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[17.017643] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Node::Type() const':\n"}
+[17.018027] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[17.019560] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[17.023892] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::Node::Scalar[abi:cxx11]() const':\n"}
+[17.024586] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[17.027932] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[17.032408] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x7d): undefined reference to `YAML::detail::node_data::empty_scalar[abi:cxx11]()'\n"}
+[17.037748] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `OrderOptimizerNode::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int)':\n"}
+[17.038140] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN18OrderOptimizerNode11processFileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj[_ZN18OrderOptimizerNode11processFileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj]+0x2ab): undefined reference to `YAML::Load(std::istream&)'\n"}
+[17.041390] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `unsigned int YAML::Node::as<unsigned int>() const':\n"}
+[17.041708] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZNK4YAML4Node2asIjEET_v[_ZNK4YAML4Node2asIjEET_v]+0x53): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[17.044495] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: OrderOptimizer.cpp:(.text._ZNK4YAML4Node2asIjEET_v[_ZNK4YAML4Node2asIjEET_v]+0x5d): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[17.047613] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::TypedBadConversion<unsigned int>::~TypedBadConversion()':\n"}
+[17.047822] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML18TypedBadConversionIjED2Ev[_ZN4YAML18TypedBadConversionIjED5Ev]+0x26): undefined reference to `YAML::BadConversion::~BadConversion()'\n"}
+[17.051236] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [6]>(char const (&) [6], std::shared_ptr<YAML::detail::memory_holder>)':\n"}
+[17.051360] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd3): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'\n"}
+[17.052716] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x103): undefined reference to `YAML::BadSubscript::~BadSubscript()'\n"}
+[17.054776] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10d): undefined reference to `typeinfo for YAML::BadSubscript'\n"}
+[17.057698] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1fb): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'\n"}
+[17.062924] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [6]>(YAML::Mark const&, char const (&) [6])':\n"}
+[17.063403] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML12BadSubscriptC2IA6_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA6_cEERKNS_4MarkERKT_]+0x61): undefined reference to `vtable for YAML::BadSubscript'\n"}
+[17.065512] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [6]>(char const (&) [6], std::shared_ptr<YAML::detail::memory_holder>)':\n"}
+[17.065648] (amr_pkg) StderrLine: {'line': b"OrderOptimizer.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x69): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'\n"}
+[17.070132] (-) TimerEvent: {}
+[17.082468] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIjEE[_ZTIN4YAML18TypedBadConversionIjEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'\n"}
+[17.093581] (amr_pkg) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o:(.data.rel.local.DW.ref._ZTIN4YAML9ExceptionE[DW.ref._ZTIN4YAML9ExceptionE]+0x0): undefined reference to `typeinfo for YAML::Exception'\n"}
+[17.166762] (amr_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: creating DT_TEXTREL in a PIE\n'}
+[17.170295] (-) TimerEvent: {}
+[17.181169] (amr_pkg) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[17.184210] (amr_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:191: orderoptimizer] Error 1\n'}
+[17.185004] (amr_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2\n'}
+[17.186159] (amr_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[17.190722] (amr_pkg) CommandEnded: {'returncode': 2}
+[17.253404] (amr_pkg) JobEnded: {'identifier': 'amr_pkg', 'rc': 2}
+[17.264539] (-) EventReactorShutdown: {}

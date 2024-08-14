@@ -198,24 +198,24 @@ amr_pkg_uninstall/fast:
 .PHONY : amr_pkg_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named order_optimizer_node
+# Target rules for targets named orderoptimizer
 
 # Build rule for target.
-order_optimizer_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 order_optimizer_node
-.PHONY : order_optimizer_node
+orderoptimizer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 orderoptimizer
+.PHONY : orderoptimizer
 
 # fast build rule for target.
-order_optimizer_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/order_optimizer_node.dir/build.make CMakeFiles/order_optimizer_node.dir/build
-.PHONY : order_optimizer_node/fast
+orderoptimizer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderoptimizer.dir/build.make CMakeFiles/orderoptimizer.dir/build
+.PHONY : orderoptimizer/fast
 
 src/OrderOptimizer.o: src/OrderOptimizer.cpp.o
 .PHONY : src/OrderOptimizer.o
 
 # target to build an object file
 src/OrderOptimizer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/order_optimizer_node.dir/build.make CMakeFiles/order_optimizer_node.dir/src/OrderOptimizer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderoptimizer.dir/build.make CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o
 .PHONY : src/OrderOptimizer.cpp.o
 
 src/OrderOptimizer.i: src/OrderOptimizer.cpp.i
@@ -223,7 +223,7 @@ src/OrderOptimizer.i: src/OrderOptimizer.cpp.i
 
 # target to preprocess a source file
 src/OrderOptimizer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/order_optimizer_node.dir/build.make CMakeFiles/order_optimizer_node.dir/src/OrderOptimizer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderoptimizer.dir/build.make CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.i
 .PHONY : src/OrderOptimizer.cpp.i
 
 src/OrderOptimizer.s: src/OrderOptimizer.cpp.s
@@ -231,7 +231,7 @@ src/OrderOptimizer.s: src/OrderOptimizer.cpp.s
 
 # target to generate assembly for a file
 src/OrderOptimizer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/order_optimizer_node.dir/build.make CMakeFiles/order_optimizer_node.dir/src/OrderOptimizer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderoptimizer.dir/build.make CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.s
 .PHONY : src/OrderOptimizer.cpp.s
 
 # Help Target
@@ -249,7 +249,7 @@ help:
 	@echo "... test"
 	@echo "... amr_pkg_uninstall"
 	@echo "... uninstall"
-	@echo "... order_optimizer_node"
+	@echo "... orderoptimizer"
 	@echo "... src/OrderOptimizer.o"
 	@echo "... src/OrderOptimizer.i"
 	@echo "... src/OrderOptimizer.s"

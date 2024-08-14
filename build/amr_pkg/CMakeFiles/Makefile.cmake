@@ -713,5 +713,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/amr_pkg_uninstall.dir/DependInfo.cmake"
-  "CMakeFiles/order_optimizer_node.dir/DependInfo.cmake"
+  "CMakeFiles/orderoptimizer.dir/DependInfo.cmake"
   )

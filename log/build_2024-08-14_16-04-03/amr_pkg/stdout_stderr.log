@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In constructor ‘[01m[KOrderOptimizerNode::OrderOptimizerNode()[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:26:67:[m[K [01;31m[Kerror: [m[K‘[01m[KpositionCallback[m[K’ is not a member of ‘[01m[KOrderOptimizerNode[m[K’
+   26 |       "currentPosition", 10, std::bind(&OrderOptimizerNode::[01;31m[KpositionCallback[m[K, this, std::placeholders::_2));
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::loadYAMLFiles(const string&, uint32_t)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:45:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_order_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   45 |   void loadYAMLFiles(const std::string& file_path, [01;35m[Kuint32_t target_order_id[m[K)
+      |                                                    [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:76: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

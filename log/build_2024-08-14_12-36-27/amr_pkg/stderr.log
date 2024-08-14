@@ -1,0 +1,12 @@
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::searchOrderInFiles(uint32_t, const string&)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:62:30:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kentry[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   62 |             for (const auto& [01;35m[Kentry[m[K : std::filesystem::directory_iterator(orders_folder_path)) {
+      |                              [01;35m[K^~~~~[m[K
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:60:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktarget_order_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   60 |     void searchOrderInFiles([01;35m[Kuint32_t target_order_id[m[K, const std::string &orders_folder_path) {
+      |                             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+/usr/bin/ld: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o:(.data.rel.local.DW.ref._ZTIN4YAML9ExceptionE[DW.ref._ZTIN4YAML9ExceptionE]+0x0): undefined reference to `typeinfo for YAML::Exception'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:191: orderoptimizer] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

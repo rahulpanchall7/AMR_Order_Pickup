@@ -1,7 +1,0 @@
-[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kamr_interfaces/msg/Order.msg: No such file or directory
-    2 | #include [01;31m[K"amr_interfaces/msg/Order.msg"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/order_optimizer_node.dir/build.make:76: CMakeFiles/order_optimizer_node.dir/src/OrderOptimizer.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/order_optimizer_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,2 @@
+Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake /home/rahul/ros2_ws/src/amr_pkg -DCMAKE_INSTALL_PREFIX=/home/rahul/ros2_ws/install/amr_pkg
+Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '1': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake /home/rahul/ros2_ws/src/amr_pkg -DCMAKE_INSTALL_PREFIX=/home/rahul/ros2_ws/install/amr_pkg

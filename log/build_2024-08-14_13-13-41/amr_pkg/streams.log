@@ -1,0 +1,27 @@
+[0.026s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[0.106s] [35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[0.141s] [ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[3.862s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.863s]                  from [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:1[m[K:
+[3.863s] [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::searchOrderInFiles(uint32_t, const string&)[m[K’:
+[3.863s] [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:71:13:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream(const std::basic_ifstream<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[3.863s]    71 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Path File: %s, with Target Order Id: %u",
+[3.863s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[3.863s] In file included from [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:9[m[K:
+[3.863s] [01m[K/usr/include/c++/11/fstream:590:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.863s]   590 |       [01;36m[Kbasic_ifstream[m[K(const basic_ifstream&) = delete;
+[3.863s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[8.987s] gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:76: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o] Error 1
+[8.988s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2
+[8.988s] gmake: *** [Makefile:146: all] Error 2
+[8.992s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '2': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6

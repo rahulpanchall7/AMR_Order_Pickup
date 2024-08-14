@@ -1,0 +1,45 @@
+[35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::parseOrderFile(const std::filesystem::__cxx11::path&, uint32_t)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:93:110:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::msg::Point[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’} and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+   93 | ation = {order_yaml["cx"].as<double>(), order_yaml["cy"].as<double>()[01;31m[K}[m[K;
+      |                                                                      [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+                 from [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >& geometry_msgs::msg::Point_<std::allocator<void> >::operator=(const geometry_msgs::msg::Point_<std::allocator<void> >&)[m[K’
+   32 | struct [01;36m[KPoint_[m[K
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >& geometry_msgs::msg::Point_<std::allocator<void> >::operator=(geometry_msgs::msg::Point_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >&&[m[K’
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::loadConfiguration(const string&)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:119:96:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::msg::Point[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’} and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+  119 | ocation = {part_node["cx"].as<double>(), part_node["cy"].as<double>()[01;31m[K}[m[K;
+      |                                                                      [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+                 from [01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >& geometry_msgs::msg::Point_<std::allocator<void> >::operator=(const geometry_msgs::msg::Point_<std::allocator<void> >&)[m[K’
+   32 | struct [01;36m[KPoint_[m[K
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >& geometry_msgs::msg::Point_<std::allocator<void> >::operator=(geometry_msgs::msg::Point_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >&&[m[K’
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::generateAndPublishMarkers(uint32_t, const string&)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:129:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdescription[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  129 | rateAndPublishMarkers(uint32_t order_id, [01;35m[Kconst std::string& description[m[K) {
+      |                                          [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvisualization_msgs::msg::Marker OrderOptimizerNode::createMarker(const string&, const Point&, uint32_t)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:162:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kname[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  162 | alization_msgs::msg::Marker createMarker([01;35m[Kconst std::string& name[m[K, const geometry_msgs::msg::Point& position, uint32_t type) {
+      |                                          [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K
+
+gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:76: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
