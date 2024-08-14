@@ -4,5 +4,3 @@ amr_interfaces.egg-info/PKG-INFO
 amr_interfaces.egg-info/SOURCES.txt
 amr_interfaces.egg-info/dependency_links.txt
 amr_interfaces.egg-info/top_level.txt
-amr_interfaces/msg/__init__.py
-amr_interfaces/msg/_order.py

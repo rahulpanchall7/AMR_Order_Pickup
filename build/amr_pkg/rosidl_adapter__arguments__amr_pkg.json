@@ -1,6 +1,0 @@
-{
-  "package_name": "amr_pkg",
-  "non_idl_tuples": [
-    "/home/rahul/ros2_ws/src/amr_pkg:msg/Order.msg"
-  ]
-}

@@ -1,0 +1,24 @@
+[0.017s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': AMENT_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/rahul/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[0.078s] [35m[1mConsolidate compiler generated dependencies of target order_optimizer_node[0m
+[0.105s] [ 50%] [32mBuilding CXX object CMakeFiles/order_optimizer_node.dir/src/OrderOptimizer.cpp.o[0m
+[3.413s] [100%] [32m[1mLinking CXX executable order_optimizer_node[0m
+[3.596s] [100%] Built target order_optimizer_node
+[3.615s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '0': AMENT_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/rahul/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[3.671s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': AMENT_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/rahul/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_pkg
+[3.680s] -- Install configuration: ""
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.dsv
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.sh
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.dsv
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.bash
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.sh
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.zsh
+[3.681s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.dsv
+[3.682s] -- Installing: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.dsv
+[3.682s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/packages/amr_pkg
+[3.682s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig.cmake
+[3.682s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig-version.cmake
+[3.682s] -- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.xml
+[3.684s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '0': AMENT_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/rahul/ros2_ws/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rahul/ros2_ws/build/amr_pkg
