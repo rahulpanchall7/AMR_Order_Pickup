@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::loadConfiguration(const string&)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:139:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct PartInfo[m[K’ has no member named ‘[01m[Kcx[m[K’
+  139 |                                     part_info.[01;31m[Kcx[m[K = part_node["cx"].as<double>();
+      |                                               [01;31m[K^~[m[K
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:140:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct PartInfo[m[K’ has no member named ‘[01m[Kcy[m[K’
+  140 |                                     part_info.[01;31m[Kcy[m[K = part_node["cy"].as<double>();
+      |                                               [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/orderoptimizer.dir/build.make:76: CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/orderoptimizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
