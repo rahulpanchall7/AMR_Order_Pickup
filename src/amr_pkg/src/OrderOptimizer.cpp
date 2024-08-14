@@ -58,35 +58,43 @@ private:
 
     void orderCallback(const interfaces::msg::Order::SharedPtr msg) {
         uint32_t order_id = msg->order_id;
-        
+
         // Clear the previous orders info
         orders_info_.clear();
 
+        // Load the order files for the given order_id
         loadOrderFiles(orders_folder_path_, order_id);
 
-        // Process each order
+        // Set the initial start position based on whether this is the first order or not
+        Position start_position = is_first_order_ ? Position{amr_position_x_, amr_position_y_} : Position{last_delivery_x_, last_delivery_y_};
+
+        // For each order, process and generate a route
         for (const auto& [order_id, order_info] : orders_info_) {
-            std::vector<PartInfo> route = solveTSP(order_info.parts, order_info.delivery_x, order_info.delivery_y);
-            
-            if (!is_first_order_) {
-                Position next_start_location = findNearestStartLocation({amr_position_x_, amr_position_y_});
-                RCLCPP_INFO(this->get_logger(), "Moving to next order start location X = %f, Y = %f", next_start_location.x, next_start_location.y);
-                // Implement movement code to the next start location
-            }
-            
+            // Generate the shortest path for the order
+            std::vector<PartInfo> route = solveShortestPath(order_info.parts, order_info.delivery_x, order_info.delivery_y, start_position);
+
+            // Print the path description
             printPathDescription(order_id, route);
+
+            // Update the last delivery location for the next order
+            last_delivery_x_ = order_info.delivery_x;
+            last_delivery_y_ = order_info.delivery_y;
+
+            // Update the start position for the next order based on the current delivery
+            start_position = {last_delivery_x_, last_delivery_y_};
         }
-    
-        // After processing, set the flag to false as the first order is now processed
+
+        // After the first order is processed, update the flag
         is_first_order_ = false;
     }
+
 
     void positionCallback(const std::shared_ptr<geometry_msgs::msg::PoseStamped> pose) {
         amr_position_x_ = pose->pose.position.x;
         amr_position_y_ = pose->pose.position.y;
         RCLCPP_INFO(this->get_logger(), "Current AMR Position: X = %f, Y = %f", amr_position_x_, amr_position_y_);
     }
-
+    
     void loadOrderFiles(const std::string& file_path, uint32_t target_order_id)
     {
         std::vector<std::string> yaml_file_paths;
@@ -215,53 +223,43 @@ private:
         return total_distance;
     }  
 
-    std::vector<PartInfo> solveTSP(const std::vector<PartInfo>& parts, double delivery_x, double delivery_y) {
+    std::vector<PartInfo> solveShortestPath(const std::vector<PartInfo>& parts, double delivery_x, double delivery_y, const Position& start_position) {
         std::vector<PartInfo> route;
-        std::vector<bool> visited(parts.size(), false);
-        
-        double current_x = amr_position_x_;
-        double current_y = amr_position_y_;
+        std::vector<PartInfo> locations = parts;
 
-        for (size_t i = 0; i < parts.size(); ++i) {
+        // Add the delivery location as the final destination
+        locations.push_back({"Delivery", delivery_x, delivery_y});
+
+        double current_x = start_position.x;
+        double current_y = start_position.y;
+
+        while (!locations.empty()) {
             double nearest_dist = std::numeric_limits<double>::infinity();
             size_t nearest_index = std::numeric_limits<size_t>::max();
 
-            for (size_t j = 0; j < parts.size(); ++j) {
-                if (!visited[j]) {
-                    double dist = calculateEucDistance(current_x, current_y, parts[j].pick_x, parts[j].pick_y);
-                    if (dist < nearest_dist) {
-                        nearest_dist = dist;
-                        nearest_index = j;
-                    }
+            for (size_t i = 0; i < locations.size(); ++i) {
+                double dist = calculateEucDistance(current_x, current_y, locations[i].pick_x, locations[i].pick_y);
+                if (dist < nearest_dist) {
+                    nearest_dist = dist;
+                    nearest_index = i;
                 }
             }
 
             if (nearest_index != std::numeric_limits<size_t>::max()) {
-                visited[nearest_index] = true;
-                const PartInfo& nearest_part = parts[nearest_index];
+                const PartInfo& nearest_part = locations[nearest_index];
                 route.push_back(nearest_part);
                 current_x = nearest_part.pick_x;
                 current_y = nearest_part.pick_y;
+                locations.erase(locations.begin() + nearest_index);
             }
         }
 
-        route.push_back({ "Delivery", delivery_x, delivery_y });
-        
         return route;
     }
 
-    void followPath(PartInfo part) {
-        if (part.part != "Delivery")
-        {
-            RCLCPP_INFO(this->get_logger(), "Moving to X = %f, Y = %f", 
-                            part.pick_x, part.pick_y);
-        }
-        
-        // Implement movement code
-    }
-    
-    Position findNearestStartLocation(const Position& current_position) 
-    {
+
+
+    Position findNearestStartLocation(const Position& current_position) {
         double min_distance = std::numeric_limits<double>::infinity();
         Position nearest_location = {0.0, 0.0};
 
@@ -277,7 +275,16 @@ private:
 
         return nearest_location;
     }
+
+    void followPath(const PartInfo& part) {
+        if (part.part != "Delivery") {
+            RCLCPP_INFO(this->get_logger(), "Moving to X = %f, Y = %f", 
+                            part.pick_x, part.pick_y);
+        }
+        // Implement movement code
+    }
     
+ 
     void printPathDescription(uint32_t order_id, const std::vector<PartInfo>& path) {
         RCLCPP_INFO(this->get_logger(), "Working on order %u", order_id);
 
@@ -286,19 +293,22 @@ private:
             if (part.part == "Delivery") {
                 RCLCPP_INFO(this->get_logger(), "%d. Delivering to destination x: %f, y: %f",
                             step++, part.pick_x, part.pick_y);
-                followPath(part);
             } else {
                 RCLCPP_INFO(this->get_logger(), "%d. Fetching part '%s' at x: %f, y: %f",
                             step++, part.part.c_str(), part.pick_x, part.pick_y);
-                followPath(part);
             }
+            followPath(part);
         }
     }
+
 
     bool is_first_order_ = true;
     
     double amr_position_x_ = 0.0;
     double amr_position_y_ = 0.0;
+
+    double last_delivery_x_ = 0.0;
+    double last_delivery_y_ = 0.0;
    
     std::string directory_path_;
     std::string orders_folder_path_;
