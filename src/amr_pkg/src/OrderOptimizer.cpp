@@ -43,22 +43,41 @@ private:
     // }
 
     void loadYAMLFiles(const std::string& file_path, uint32_t target_order_id)
-    {
-        std::vector<std::string> yaml_file_paths;
-        for (const auto& entry : std::filesystem::directory_iterator(file_path))
         {
-            if (entry.is_regular_file() && entry.path().extension() == ".yaml")
+            std::vector<std::string> yaml_file_paths;
+            for (const auto& entry : std::filesystem::directory_iterator(file_path))
             {
-                yaml_file_paths.push_back(entry.path().string());
+                if (entry.is_regular_file() && entry.path().extension() == ".yaml")
+                {
+                    yaml_file_paths.push_back(entry.path().string());
+                }
             }
+
+            std::vector<std::future<void>> futures;
+
+            for (const auto& yaml_path : yaml_file_paths)
+            {
+                futures.push_back(std::async(std::launch::async, [this, yaml_path, target_order_id]()
+                {
+                    processFile(yaml_path, target_order_id);
+                }));
+            }
+
+            // Optionally: Wait for all threads to complete
+            for (auto& future : futures)
+            {
+                future.get();
+            }
+
+            RCLCPP_INFO(this->get_logger(), "Finished processing YAML files for Order Id; %u", target_order_id);
         }
 
-        for (const auto& yaml_path : yaml_file_paths)
+        void processFile(const std::string& yaml_path, uint32_t target_order_id)
         {
             try
             {
                 YAML::Node order_yaml = YAML::LoadFile(yaml_path);
-                
+
                 if (order_yaml.IsSequence())
                 {
                     for (const auto& item : order_yaml)
@@ -74,24 +93,18 @@ private:
 
                                 RCLCPP_INFO(this->get_logger(), "Order ID %d found in file: %s", target_order_id, yaml_path.c_str());
                                 RCLCPP_INFO(this->get_logger(), "dest_x: %f, dest_y: %f", dest_x, dest_y);
-
-                                // Log products
                                 RCLCPP_INFO(this->get_logger(), "Products:");
                                 for (int product : products)
                                 {
                                     RCLCPP_INFO(this->get_logger(), "  %d", product);
                                 }
                             }
-                        }
-                        else
-                        {
-                            RCLCPP_WARN(this->get_logger(), "No 'order' key found in an item in YAML file: %s", yaml_path.c_str());
+                            // else
+                            // {
+                            //     RCLCPP_WARN(this->get_logger(), "No 'order' key found in an item in YAML file: %s", yaml_path.c_str());
+                            // }
                         }
                     }
-                }
-                else
-                {
-                    RCLCPP_WARN(this->get_logger(), "Root node is not a sequence in YAML file: %s", yaml_path.c_str());
                 }
             }
             catch (const YAML::Exception& e)
@@ -100,8 +113,6 @@ private:
             }
         }
 
-        RCLCPP_INFO(this->get_logger(), "Finished processing YAML files.");
-    }
 
    
 
