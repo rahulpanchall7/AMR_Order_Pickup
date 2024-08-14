@@ -68,11 +68,10 @@ private:
         for (const auto& [order_id, order_info] : orders_info_) {
             std::vector<PartInfo> route = solveTSP(order_info.parts, order_info.delivery_x, order_info.delivery_y);
             
-            // Only print the start location message for subsequent orders
             if (!is_first_order_) {
                 Position next_start_location = findNearestStartLocation({amr_position_x_, amr_position_y_});
                 RCLCPP_INFO(this->get_logger(), "Moving to next order start location X = %f, Y = %f", next_start_location.x, next_start_location.y);
-                // // Implement movement code to the next start location
+                // Implement movement code to the next start location
             }
             
             printPathDescription(order_id, route);
@@ -81,8 +80,6 @@ private:
         // After processing, set the flag to false as the first order is now processed
         is_first_order_ = false;
     }
-
-
 
     void positionCallback(const std::shared_ptr<geometry_msgs::msg::PoseStamped> pose) {
         amr_position_x_ = pose->pose.position.x;
@@ -196,17 +193,6 @@ private:
                 }
             }
 
-            // Print the loaded product information
-            // for (const auto& [product_name, product_info] : product_parts_) {
-            //     RCLCPP_INFO(this->get_logger(), "Product ID: %u, Product Name: %s", 
-            //                 product_info.product_id, product_name.c_str());
-
-            //     for (const auto& part : product_info.parts) {
-            //         RCLCPP_INFO(this->get_logger(), "    Part: %s, Pick X: %f, Pick Y: %f", 
-            //                     part.part.c_str(), part.pick_x, part.pick_y);
-            //     }
-            // }
-
             RCLCPP_INFO(this->get_logger(), "Loaded configuration from %s", config_path.c_str());
 
         } catch (const YAML::Exception& e) {
@@ -263,8 +249,6 @@ private:
         
         return route;
     }
-
-
 
     void followPath(PartInfo part) {
         if (part.part != "Delivery")
