@@ -44,8 +44,17 @@ std::map<uint32_t, OrderInfo> orders_info_;
 class OrderOptimizerNode : public rclcpp::Node {
 public:
     OrderOptimizerNode() : Node("order_optimizer_node") {
-        this->declare_parameter<std::string>("directory_path", "/home/rahul/Downloads/amr_example_ROS/applicants_amr_example_1");
+        // this->declare_parameter<std::string>("directory_path", "/home/sahil/Downloads/amr_example_ROS/applicants_amr_example_1");
+        // this->get_parameter("directory_path", directory_path_);
+
+        this->declare_parameter<std::string>("directory_path", "");
         this->get_parameter("directory_path", directory_path_);
+
+        if (directory_path_.empty()) {
+            RCLCPP_ERROR(this->get_logger(), "Parameter 'directory_path' is not set. Exiting.");
+            rclcpp::shutdown();
+            return;
+        }
         
         orders_folder_path_ = directory_path_ + "/orders";
         config_folder_path_ = directory_path_ + "/configuration";
@@ -374,21 +383,22 @@ private:
         RCLCPP_INFO(this->get_logger(), "Working on Order Id: %u", order_id);
         rclcpp::sleep_for(std::chrono::milliseconds(1000));
 
-        publishAMRMarker(delivery_position.x, delivery_position.y);
 
         for (const auto& part : path) {
             if (part.part != "Delivery") {
-                publishAMRMarker(part.pick_x, part.pick_y);
                 RCLCPP_INFO(this->get_logger(), "Fetching '%s' of '%s' at (%.2f, %.2f)",
                             part.part.c_str(), part.product_name.c_str(), part.pick_x, part.pick_y);
                 amr_position_x_ = part.pick_x;
                 amr_position_y_ = part.pick_y;
+                publishAMRMarker(part.pick_x, part.pick_y);
                 rclcpp::sleep_for(std::chrono::milliseconds(1000));
             }
         }
         
         amr_position_x_ = delivery_position.x;
         amr_position_y_ = delivery_position.y;
+
+        publishAMRMarker(delivery_position.x, delivery_position.y);
 
         RCLCPP_INFO(this->get_logger(), "Delivering to Destination (%.2f, %.2f)", 
                                                     delivery_position.x, delivery_position.y);

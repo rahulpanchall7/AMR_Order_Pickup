@@ -1,0 +1,216 @@
+[0.076s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.076s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73847793ec20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73847793e590>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73847793e590>>, mixin_verb=('build',))
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.246s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sahil/AMR_Order_Pickup'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_pkg) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_pkg) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_pkg) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_pkg) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_pkg) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_pkg) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_pkg) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_pkg) by extension 'ros'
+[0.261s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amr_pkg' with type 'ros.ament_cmake' and name 'amr_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interfaces' with type 'ros.ament_cmake' and name 'interfaces'
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.285s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 294 installed packages in /opt/ros/humble
+[0.286s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.327s] DEBUG:colcon.colcon_core.verb:Building package 'interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sahil/AMR_Order_Pickup/build/interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sahil/AMR_Order_Pickup/install/interfaces', 'merge_install': False, 'path': '/home/sahil/AMR_Order_Pickup/src/interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'amr_pkg' build argument 'cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'amr_pkg' build argument 'cmake_target' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'amr_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'amr_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'amr_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'amr_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'amr_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'amr_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'amr_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.328s] DEBUG:colcon.colcon_core.verb:Building package 'amr_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sahil/AMR_Order_Pickup/build/amr_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sahil/AMR_Order_Pickup/install/amr_pkg', 'merge_install': False, 'path': '/home/sahil/AMR_Order_Pickup/src/amr_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.329s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.330s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.330s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sahil/AMR_Order_Pickup/src/interfaces' with build type 'ament_cmake'
+[0.330s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sahil/AMR_Order_Pickup/src/interfaces'
+[0.332s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.332s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.333s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil/AMR_Order_Pickup/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sahil/AMR_Order_Pickup/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/sahil/AMR_Order_Pickup/install/interfaces
+[2.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil/AMR_Order_Pickup/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sahil/AMR_Order_Pickup/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/sahil/AMR_Order_Pickup/install/interfaces
+[2.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil/AMR_Order_Pickup/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sahil/AMR_Order_Pickup/build/interfaces -- -j2 -l2
+[7.563s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil/AMR_Order_Pickup/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sahil/AMR_Order_Pickup/build/interfaces -- -j2 -l2
+[7.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil/AMR_Order_Pickup/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sahil/AMR_Order_Pickup/build/interfaces
+[7.878s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[7.880s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces' for CMake module files
+[7.881s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces' for CMake config files
+[7.881s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[7.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[7.881s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[7.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[7.882s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/lib'
+[7.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[7.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[7.883s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[7.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[7.883s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/bin'
+[7.883s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/lib/pkgconfig/interfaces.pc'
+[7.883s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/lib/python3.10/site-packages'
+[7.883s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/bin'
+[7.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.ps1'
+[7.884s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.dsv'
+[7.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.sh'
+[7.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil/AMR_Order_Pickup/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sahil/AMR_Order_Pickup/build/interfaces
+[7.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.bash'
+[7.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.zsh'
+[7.891s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sahil/AMR_Order_Pickup/install/interfaces/share/colcon-core/packages/interfaces)
+[8.031s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[8.031s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces' for CMake module files
+[8.032s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces' for CMake config files
+[8.032s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[8.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[8.033s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[8.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[8.033s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/lib'
+[8.034s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[8.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[8.035s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[8.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[8.035s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/bin'
+[8.035s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/lib/pkgconfig/interfaces.pc'
+[8.036s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/lib/python3.10/site-packages'
+[8.036s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/interfaces/bin'
+[8.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.ps1'
+[8.036s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.dsv'
+[8.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.sh'
+[8.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.bash'
+[8.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.zsh'
+[8.038s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sahil/AMR_Order_Pickup/install/interfaces/share/colcon-core/packages/interfaces)
+[8.038s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sahil/AMR_Order_Pickup/src/amr_pkg' with build type 'ament_cmake'
+[8.039s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sahil/AMR_Order_Pickup/src/amr_pkg'
+[8.039s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.039s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/sahil/AMR_Order_Pickup/src/amr_pkg -DCMAKE_INSTALL_PREFIX=/home/sahil/AMR_Order_Pickup/install/amr_pkg
+[10.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg' returned '0': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/sahil/AMR_Order_Pickup/src/amr_pkg -DCMAKE_INSTALL_PREFIX=/home/sahil/AMR_Order_Pickup/install/amr_pkg
+[10.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sahil/AMR_Order_Pickup/build/amr_pkg -- -j2 -l2
+[26.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg' returned '0': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sahil/AMR_Order_Pickup/build/amr_pkg -- -j2 -l2
+[26.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sahil/AMR_Order_Pickup/build/amr_pkg
+[26.772s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_pkg)
+[26.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg' returned '0': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sahil/AMR_Order_Pickup/build/amr_pkg
+[26.774s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg' for CMake module files
+[26.775s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg' for CMake config files
+[26.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_pkg', 'cmake_prefix_path')
+[26.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/hook/cmake_prefix_path.ps1'
+[26.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/hook/cmake_prefix_path.dsv'
+[26.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/hook/cmake_prefix_path.sh'
+[26.777s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/lib'
+[26.777s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/bin'
+[26.777s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/pkgconfig/amr_pkg.pc'
+[26.777s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/python3.10/site-packages'
+[26.777s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/bin'
+[26.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.ps1'
+[26.778s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.dsv'
+[26.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.sh'
+[26.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.bash'
+[26.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.zsh'
+[26.779s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/colcon-core/packages/amr_pkg)
+[26.833s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_pkg)
+[26.833s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg' for CMake module files
+[26.834s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg' for CMake config files
+[26.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_pkg', 'cmake_prefix_path')
+[26.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/hook/cmake_prefix_path.ps1'
+[26.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/hook/cmake_prefix_path.dsv'
+[26.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/hook/cmake_prefix_path.sh'
+[26.836s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/lib'
+[26.836s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/bin'
+[26.836s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/pkgconfig/amr_pkg.pc'
+[26.836s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/python3.10/site-packages'
+[26.836s] Level 1:colcon.colcon_core.environment:checking '/home/sahil/AMR_Order_Pickup/install/amr_pkg/bin'
+[26.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.ps1'
+[26.837s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.dsv'
+[26.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.sh'
+[26.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.bash'
+[26.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.zsh'
+[26.839s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sahil/AMR_Order_Pickup/install/amr_pkg/share/colcon-core/packages/amr_pkg)
+[26.840s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[26.840s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[26.840s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[26.840s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[26.863s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[26.863s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[26.863s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[26.878s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[26.878s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sahil/AMR_Order_Pickup/install/local_setup.ps1'
+[26.880s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sahil/AMR_Order_Pickup/install/_local_setup_util_ps1.py'
+[26.882s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sahil/AMR_Order_Pickup/install/setup.ps1'
+[26.883s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sahil/AMR_Order_Pickup/install/local_setup.sh'
+[26.886s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sahil/AMR_Order_Pickup/install/_local_setup_util_sh.py'
+[26.886s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sahil/AMR_Order_Pickup/install/setup.sh'
+[26.887s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sahil/AMR_Order_Pickup/install/local_setup.bash'
+[26.888s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sahil/AMR_Order_Pickup/install/setup.bash'
+[26.892s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sahil/AMR_Order_Pickup/install/local_setup.zsh'
+[26.892s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sahil/AMR_Order_Pickup/install/setup.zsh'

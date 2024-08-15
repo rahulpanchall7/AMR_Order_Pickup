@@ -1,4 +1,0 @@
-[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kstd::vector<PartInfo> OrderOptimizerNode::solveTSP(const std::vector<PartInfo>&, double, double)[m[K’:
-[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:246:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
-  246 |             if ([01;35m[Knearest_index != -1[m[K) {
-      |                 [01;35m[K~~~~~~~~~~~~~~^~~~~[m[K

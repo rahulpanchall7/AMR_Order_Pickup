@@ -1,0 +1,570 @@
+[0.000000] (-) TimerEvent: {}
+[0.000229] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.000332] (amr_pkg) JobQueued: {'identifier': 'amr_pkg', 'dependencies': OrderedDict([('interfaces', '/home/sahil/AMR_Order_Pickup/install/interfaces')])}
+[0.000422] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.007820] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.007862] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/sahil/AMR_Order_Pickup/src/interfaces', '-DCMAKE_INSTALL_PREFIX=/home/sahil/AMR_Order_Pickup/install/interfaces'], 'cwd': '/home/sahil/AMR_Order_Pickup/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sahil'), ('LC_TIME', 'ps_AF'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sahil'), ('OLDPWD', '/home/sahil'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ps_AF'), ('SYSTEMD_EXEC_PID', '1823'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sahil'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sahil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sahil-virtual-machine:@/tmp/.ICE-unix/1651,unix/sahil-virtual-machine:/tmp/.ICE-unix/1651'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ps_AF'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/598771b1_fb20_4146_9542_80d13627180a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ps_AF'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F9N6R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.201'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '48'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ps_AF'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ps_AF'), ('LC_IDENTIFICATION', 'ps_AF'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sahil/AMR_Order_Pickup/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ps_AF'), ('LC_PAPER', 'ps_AF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.091788] (-) TimerEvent: {}
+[0.192201] (-) TimerEvent: {}
+[0.209081] (interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.292302] (-) TimerEvent: {}
+[0.353209] (interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.381629] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.392413] (-) TimerEvent: {}
+[0.478996] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.485840] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.486838] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.488920] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.492574] (-) TimerEvent: {}
+[0.494040] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.595749] (-) TimerEvent: {}
+[0.596593] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.601623] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.602007] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.602451] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.612528] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.695845] (-) TimerEvent: {}
+[0.796177] (-) TimerEvent: {}
+[0.803334] (interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.896297] (-) TimerEvent: {}
+[0.979863] (interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.990591] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.996375] (-) TimerEvent: {}
+[1.004543] (interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.087520] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.096476] (-) TimerEvent: {}
+[1.196841] (-) TimerEvent: {}
+[1.303865] (-) TimerEvent: {}
+[1.404184] (-) TimerEvent: {}
+[1.496464] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.504287] (-) TimerEvent: {}
+[1.604699] (-) TimerEvent: {}
+[1.705077] (-) TimerEvent: {}
+[1.786422] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.805177] (-) TimerEvent: {}
+[1.905482] (-) TimerEvent: {}
+[2.005800] (-) TimerEvent: {}
+[2.106124] (-) TimerEvent: {}
+[2.106539] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.164071] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.170601] (interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.206224] (-) TimerEvent: {}
+[2.212338] (interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.212577] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.212648] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.212701] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.241781] (interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.304134] (interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.306334] (-) TimerEvent: {}
+[2.339123] (interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.342506] (interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/sahil/AMR_Order_Pickup/build/interfaces\n'}
+[2.355501] (interfaces) CommandEnded: {'returncode': 0}
+[2.356046] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[2.356527] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sahil/AMR_Order_Pickup/build/interfaces', '--', '-j2', '-l2'], 'cwd': '/home/sahil/AMR_Order_Pickup/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sahil'), ('LC_TIME', 'ps_AF'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sahil'), ('OLDPWD', '/home/sahil'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ps_AF'), ('SYSTEMD_EXEC_PID', '1823'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sahil'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sahil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sahil-virtual-machine:@/tmp/.ICE-unix/1651,unix/sahil-virtual-machine:/tmp/.ICE-unix/1651'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ps_AF'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/598771b1_fb20_4146_9542_80d13627180a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ps_AF'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F9N6R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.201'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '48'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ps_AF'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ps_AF'), ('LC_IDENTIFICATION', 'ps_AF'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sahil/AMR_Order_Pickup/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ps_AF'), ('LC_PAPER', 'ps_AF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.406447] (-) TimerEvent: {}
+[2.423738] (interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.443792] (interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.506562] (-) TimerEvent: {}
+[2.607759] (-) TimerEvent: {}
+[2.708090] (-) TimerEvent: {}
+[2.819770] (-) TimerEvent: {}
+[2.868676] (interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/order__functions.c.o\x1b[0m\n'}
+[2.907865] (interfaces) StdoutLine: {'line': b'[  9%] Built target interfaces__cpp\n'}
+[2.921741] (-) TimerEvent: {}
+[2.943297] (interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.985482] (interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_interfaces\n'}
+[3.022130] (-) TimerEvent: {}
+[3.034327] (interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.076544] (interfaces) StdoutLine: {'line': b'[ 16%] Built target interfaces__rosidl_generator_c\n'}
+[3.112181] (interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.127747] (-) TimerEvent: {}
+[3.233849] (-) TimerEvent: {}
+[3.320076] (interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/order__type_support.cpp.o\x1b[0m\n'}
+[3.333943] (-) TimerEvent: {}
+[3.435763] (-) TimerEvent: {}
+[3.509405] (interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/order__type_support.cpp.o\x1b[0m\n'}
+[3.535880] (-) TimerEvent: {}
+[3.636345] (-) TimerEvent: {}
+[3.736838] (-) TimerEvent: {}
+[3.837316] (-) TimerEvent: {}
+[3.909461] (interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.937442] (-) TimerEvent: {}
+[4.037928] (-) TimerEvent: {}
+[4.038641] (interfaces) StdoutLine: {'line': b'[ 29%] Built target interfaces__rosidl_typesupport_cpp\n'}
+[4.081211] (interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.138020] (-) TimerEvent: {}
+[4.238450] (-) TimerEvent: {}
+[4.272103] (interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.338562] (-) TimerEvent: {}
+[4.428525] (interfaces) StdoutLine: {'line': b'[ 35%] Built target interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.438655] (-) TimerEvent: {}
+[4.462475] (interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/order__type_support.cpp.o\x1b[0m\n'}
+[4.540180] (-) TimerEvent: {}
+[4.640519] (-) TimerEvent: {}
+[4.747793] (-) TimerEvent: {}
+[4.855765] (-) TimerEvent: {}
+[4.924638] (interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.926098] (interfaces) StdoutLine: {'line': b'creating interfaces.egg-info\n'}
+[4.926999] (interfaces) StdoutLine: {'line': b'writing interfaces.egg-info/PKG-INFO\n'}
+[4.927847] (interfaces) StdoutLine: {'line': b'writing dependency_links to interfaces.egg-info/dependency_links.txt\n'}
+[4.928683] (interfaces) StdoutLine: {'line': b'writing top-level names to interfaces.egg-info/top_level.txt\n'}
+[4.929557] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[4.933571] (interfaces) StdoutLine: {'line': b"reading manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[4.934756] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[4.959771] (-) TimerEvent: {}
+[4.976560] (interfaces) StdoutLine: {'line': b'[ 38%] Built target ament_cmake_python_build_interfaces_egg\n'}
+[5.007176] (interfaces) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.059867] (-) TimerEvent: {}
+[5.132032] (interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.160231] (-) TimerEvent: {}
+[5.260648] (-) TimerEvent: {}
+[5.269081] (interfaces) StdoutLine: {'line': b'[ 45%] Built target interfaces__rosidl_typesupport_introspection_cpp\n'}
+[5.291983] (interfaces) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.349466] (interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/order__type_support_c.cpp.o\x1b[0m\n'}
+[5.360788] (-) TimerEvent: {}
+[5.461186] (-) TimerEvent: {}
+[5.561558] (-) TimerEvent: {}
+[5.663864] (-) TimerEvent: {}
+[5.696788] (interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/order__type_support.c.o\x1b[0m\n'}
+[5.763977] (-) TimerEvent: {}
+[5.766918] (interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.855676] (interfaces) StdoutLine: {'line': b'[ 58%] Built target interfaces__rosidl_typesupport_introspection_c\n'}
+[5.864104] (-) TimerEvent: {}
+[5.880486] (interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.882121] (interfaces) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.964203] (-) TimerEvent: {}
+[6.021524] (interfaces) StdoutLine: {'line': b'[ 64%] Built target interfaces__rosidl_typesupport_fastrtps_c\n'}
+[6.064311] (-) TimerEvent: {}
+[6.110478] (interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/order__type_support.cpp.o\x1b[0m\n'}
+[6.138639] (interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.164419] (-) TimerEvent: {}
+[6.189104] (interfaces) StdoutLine: {'line': b'[ 70%] Built target interfaces__rosidl_typesupport_c\n'}
+[6.214410] (interfaces) StdoutLine: {'line': b'[ 70%] Built target interfaces\n'}
+[6.245243] (interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.264539] (-) TimerEvent: {}
+[6.364838] (-) TimerEvent: {}
+[6.465255] (-) TimerEvent: {}
+[6.566819] (-) TimerEvent: {}
+[6.600769] (interfaces) StdoutLine: {'line': b'[ 74%] Built target interfaces__py\n'}
+[6.628337] (interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_order_s.c.o\x1b[0m\n'}
+[6.666944] (-) TimerEvent: {}
+[6.762216] (interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so\x1b[0m\n'}
+[6.767032] (-) TimerEvent: {}
+[6.803155] (interfaces) StdoutLine: {'line': b'[ 80%] Built target interfaces__rosidl_generator_py\n'}
+[6.859778] (interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.871845] (-) TimerEvent: {}
+[6.898093] (interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.943744] (interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.971958] (-) TimerEvent: {}
+[7.035467] (interfaces) StdoutLine: {'line': b'[ 90%] Built target interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[7.045304] (interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.075752] (-) TimerEvent: {}
+[7.079723] (interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.111487] (interfaces) StdoutLine: {'line': b'[ 96%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.168157] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.175881] (-) TimerEvent: {}
+[7.208267] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_c__pyext\n'}
+[7.224983] (interfaces) CommandEnded: {'returncode': 0}
+[7.275967] (-) TimerEvent: {}
+[7.376316] (-) TimerEvent: {}
+[7.386426] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[7.398545] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sahil/AMR_Order_Pickup/build/interfaces'], 'cwd': '/home/sahil/AMR_Order_Pickup/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sahil'), ('LC_TIME', 'ps_AF'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sahil'), ('OLDPWD', '/home/sahil'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ps_AF'), ('SYSTEMD_EXEC_PID', '1823'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sahil'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sahil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sahil-virtual-machine:@/tmp/.ICE-unix/1651,unix/sahil-virtual-machine:/tmp/.ICE-unix/1651'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ps_AF'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/598771b1_fb20_4146_9542_80d13627180a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ps_AF'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F9N6R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.201'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '48'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ps_AF'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ps_AF'), ('LC_IDENTIFICATION', 'ps_AF'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sahil/AMR_Order_Pickup/build/interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ps_AF'), ('LC_PAPER', 'ps_AF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.415112] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.416638] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces\n'}
+[7.417738] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces\n'}
+[7.418339] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg\n'}
+[7.418853] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[7.419344] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__functions.c\n'}
+[7.419894] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__struct.h\n'}
+[7.420427] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__type_support.h\n'}
+[7.421006] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__functions.h\n'}
+[7.421588] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/order.h\n'}
+[7.422153] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.422867] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/environment/library_path.sh\n'}
+[7.423459] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/environment/library_path.dsv\n'}
+[7.424237] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_generator_c.so\n'}
+[7.425673] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""\n'}
+[7.425851] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces\n'}
+[7.426004] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg\n'}
+[7.427084] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[7.427332] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__rosidl_typesupport_fastrtps_c.h\n'}
+[7.427579] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.427891] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[7.430372] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.430541] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces\n'}
+[7.430769] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg\n'}
+[7.430923] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[7.431086] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__rosidl_typesupport_introspection_c.h\n'}
+[7.431308] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__type_support.c\n'}
+[7.431531] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.431822] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so\n'}
+[7.432737] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.432831] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so\n'}
+[7.433316] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""\n'}
+[7.435729] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces\n'}
+[7.435885] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg\n'}
+[7.436027] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[7.436141] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__struct.hpp\n'}
+[7.436442] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__traits.hpp\n'}
+[7.436642] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__builder.hpp\n'}
+[7.436837] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/order.hpp\n'}
+[7.437083] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces\n'}
+[7.437197] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg\n'}
+[7.437316] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[7.437440] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.437634] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/dds_fastrtps\n'}
+[7.437818] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.438068] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.438715] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.438939] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces\n'}
+[7.439111] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg\n'}
+[7.439287] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[7.439467] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.443754] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/include/interfaces/interfaces/msg/detail/order__type_support.cpp\n'}
+[7.444098] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[7.444759] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.445628] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so\n'}
+[7.446343] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[7.446529] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/environment/pythonpath.sh\n'}
+[7.446825] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/environment/pythonpath.dsv\n'}
+[7.447103] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info\n'}
+[7.447980] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[7.448363] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.448631] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[7.448893] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[7.449184] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces\n'}
+[7.449408] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.449668] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.449969] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.450236] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py\n'}
+[7.450475] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so\n'}
+[7.450758] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[7.451028] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.451299] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg\n'}
+[7.451589] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py\n'}
+[7.455797] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_order.py\n'}
+[7.456100] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_order_s.c\n'}
+[7.456380] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.476499] (-) TimerEvent: {}
+[7.511540] (interfaces) StdoutLine: {'line': b"Listing '/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...\n"}
+[7.511738] (interfaces) StdoutLine: {'line': b"Compiling '/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py'...\n"}
+[7.511803] (interfaces) StdoutLine: {'line': b"Listing '/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg'...\n"}
+[7.511848] (interfaces) StdoutLine: {'line': b"Compiling '/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py'...\n"}
+[7.511887] (interfaces) StdoutLine: {'line': b"Compiling '/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_order.py'...\n"}
+[7.523887] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.524104] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.524192] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.524257] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.524447] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.524520] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.524588] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_generator_py.so\n'}
+[7.524649] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""\n'}
+[7.524704] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/msg/Order.idl\n'}
+[7.524759] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/msg/Order.msg\n'}
+[7.524843] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces\n'}
+[7.524901] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces\n'}
+[7.524962] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/environment/ament_prefix_path.sh\n'}
+[7.525015] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv\n'}
+[7.525065] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/environment/path.sh\n'}
+[7.525121] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/environment/path.dsv\n'}
+[7.525176] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/local_setup.bash\n'}
+[7.525239] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/local_setup.sh\n'}
+[7.525302] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/local_setup.zsh\n'}
+[7.525362] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/local_setup.dsv\n'}
+[7.525435] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.dsv\n'}
+[7.525498] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/ament_index/resource_index/packages/interfaces\n'}
+[7.525564] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake\n'}
+[7.525633] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.525697] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.525762] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.525827] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.525892] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.525986] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake\n'}
+[7.526057] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.526126] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake\n'}
+[7.526194] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.526260] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.526325] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.526641] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.527783] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[7.528075] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.528361] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake\n'}
+[7.528621] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.528893] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[7.529180] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.535762] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.536090] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.536502] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.536808] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.537116] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.537414] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake\n'}
+[7.537675] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake\n'}
+[7.537973] (interfaces) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/package.xml\n'}
+[7.552006] (interfaces) CommandEnded: {'returncode': 0}
+[7.576637] (-) TimerEvent: {}
+[7.676885] (-) TimerEvent: {}
+[7.700386] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[7.700783] (amr_pkg) JobStarted: {'identifier': 'amr_pkg'}
+[7.728111] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'cmake'}
+[7.728237] (amr_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/sahil/AMR_Order_Pickup/src/amr_pkg', '-DCMAKE_INSTALL_PREFIX=/home/sahil/AMR_Order_Pickup/install/amr_pkg'], 'cwd': '/home/sahil/AMR_Order_Pickup/build/amr_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sahil'), ('LC_TIME', 'ps_AF'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sahil/AMR_Order_Pickup/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sahil'), ('OLDPWD', '/home/sahil'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ps_AF'), ('SYSTEMD_EXEC_PID', '1823'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sahil'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sahil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sahil-virtual-machine:@/tmp/.ICE-unix/1651,unix/sahil-virtual-machine:/tmp/.ICE-unix/1651'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ps_AF'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/598771b1_fb20_4146_9542_80d13627180a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ps_AF'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F9N6R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.201'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '48'), ('AMENT_PREFIX_PATH', '/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ps_AF'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ps_AF'), ('LC_IDENTIFICATION', 'ps_AF'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sahil/AMR_Order_Pickup/build/amr_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ps_AF'), ('LC_PAPER', 'ps_AF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[7.777021] (-) TimerEvent: {}
+[7.788986] (amr_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[7.852861] (amr_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[7.858915] (amr_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.877104] (-) TimerEvent: {}
+[7.937246] (amr_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.941396] (amr_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.941733] (amr_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.942116] (amr_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.944337] (amr_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.977230] (-) TimerEvent: {}
+[8.063573] (amr_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.068178] (amr_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[8.068639] (amr_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.069258] (amr_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[8.071409] (amr_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[8.077293] (-) TimerEvent: {}
+[8.177603] (-) TimerEvent: {}
+[8.274486] (amr_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[8.277704] (-) TimerEvent: {}
+[8.378493] (-) TimerEvent: {}
+[8.390464] (amr_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[8.455801] (amr_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[8.461184] (amr_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[8.470309] (amr_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[8.478566] (-) TimerEvent: {}
+[8.486261] (amr_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.508277] (amr_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.582334] (-) TimerEvent: {}
+[8.652038] (amr_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[8.659246] (amr_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.682494] (-) TimerEvent: {}
+[8.782888] (-) TimerEvent: {}
+[8.847297] (amr_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.883008] (-) TimerEvent: {}
+[8.898838] (amr_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.951969] (amr_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.976785] (amr_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.983111] (-) TimerEvent: {}
+[9.083387] (-) TimerEvent: {}
+[9.164084] (amr_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[9.164301] (amr_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[9.183470] (-) TimerEvent: {}
+[9.287770] (-) TimerEvent: {}
+[9.301898] (amr_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[9.302783] (amr_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.387957] (-) TimerEvent: {}
+[9.488286] (-) TimerEvent: {}
+[9.543622] (amr_pkg) StdoutLine: {'line': b'-- Found interfaces: 0.0.0 (/home/sahil/AMR_Order_Pickup/install/interfaces/share/interfaces/cmake)\n'}
+[9.566979] (amr_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[9.588379] (-) TimerEvent: {}
+[9.625076] (amr_pkg) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[9.688552] (-) TimerEvent: {}
+[9.788886] (-) TimerEvent: {}
+[9.827165] (amr_pkg) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[9.889015] (-) TimerEvent: {}
+[9.989443] (-) TimerEvent: {}
+[10.089860] (-) TimerEvent: {}
+[10.191426] (-) TimerEvent: {}
+[10.291910] (-) TimerEvent: {}
+[10.355834] (amr_pkg) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[10.384317] (amr_pkg) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[10.387104] (amr_pkg) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[10.387427] (amr_pkg) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[10.391973] (-) TimerEvent: {}
+[10.483606] (amr_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.492082] (-) TimerEvent: {}
+[10.508914] (amr_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[10.511166] (amr_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/sahil/AMR_Order_Pickup/build/amr_pkg\n'}
+[10.531069] (amr_pkg) CommandEnded: {'returncode': 0}
+[10.531883] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'build'}
+[10.532211] (amr_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sahil/AMR_Order_Pickup/build/amr_pkg', '--', '-j2', '-l2'], 'cwd': '/home/sahil/AMR_Order_Pickup/build/amr_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sahil'), ('LC_TIME', 'ps_AF'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sahil/AMR_Order_Pickup/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sahil'), ('OLDPWD', '/home/sahil'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ps_AF'), ('SYSTEMD_EXEC_PID', '1823'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sahil'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sahil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sahil-virtual-machine:@/tmp/.ICE-unix/1651,unix/sahil-virtual-machine:/tmp/.ICE-unix/1651'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ps_AF'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/598771b1_fb20_4146_9542_80d13627180a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ps_AF'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F9N6R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.201'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '48'), ('AMENT_PREFIX_PATH', '/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ps_AF'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ps_AF'), ('LC_IDENTIFICATION', 'ps_AF'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sahil/AMR_Order_Pickup/build/amr_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ps_AF'), ('LC_PAPER', 'ps_AF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[10.594184] (-) TimerEvent: {}
+[10.660702] (amr_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/transformbroadcaster.dir/src/TransformBroadcaster.cpp.o\x1b[0m\n'}
+[10.673629] (amr_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o\x1b[0m\n'}
+[10.694290] (-) TimerEvent: {}
+[10.794616] (-) TimerEvent: {}
+[10.898163] (-) TimerEvent: {}
+[10.998459] (-) TimerEvent: {}
+[11.098796] (-) TimerEvent: {}
+[11.199082] (-) TimerEvent: {}
+[11.307754] (-) TimerEvent: {}
+[11.411760] (-) TimerEvent: {}
+[11.512047] (-) TimerEvent: {}
+[11.615771] (-) TimerEvent: {}
+[11.716170] (-) TimerEvent: {}
+[11.816462] (-) TimerEvent: {}
+[11.931759] (-) TimerEvent: {}
+[12.035761] (-) TimerEvent: {}
+[12.139192] (-) TimerEvent: {}
+[12.245515] (-) TimerEvent: {}
+[12.356048] (-) TimerEvent: {}
+[12.457719] (-) TimerEvent: {}
+[12.558218] (-) TimerEvent: {}
+[12.658596] (-) TimerEvent: {}
+[12.758974] (-) TimerEvent: {}
+[12.859353] (-) TimerEvent: {}
+[12.959811] (-) TimerEvent: {}
+[13.064405] (-) TimerEvent: {}
+[13.170863] (-) TimerEvent: {}
+[13.271243] (-) TimerEvent: {}
+[13.371623] (-) TimerEvent: {}
+[13.472126] (-) TimerEvent: {}
+[13.575771] (-) TimerEvent: {}
+[13.679776] (-) TimerEvent: {}
+[13.783772] (-) TimerEvent: {}
+[13.900641] (-) TimerEvent: {}
+[14.003950] (-) TimerEvent: {}
+[14.104793] (-) TimerEvent: {}
+[14.208754] (-) TimerEvent: {}
+[14.316094] (-) TimerEvent: {}
+[14.416449] (-) TimerEvent: {}
+[14.516804] (-) TimerEvent: {}
+[14.617160] (-) TimerEvent: {}
+[14.717576] (-) TimerEvent: {}
+[14.817956] (-) TimerEvent: {}
+[14.918471] (-) TimerEvent: {}
+[15.018980] (-) TimerEvent: {}
+[15.119381] (-) TimerEvent: {}
+[15.219801] (-) TimerEvent: {}
+[15.320201] (-) TimerEvent: {}
+[15.421956] (-) TimerEvent: {}
+[15.529372] (-) TimerEvent: {}
+[15.631908] (-) TimerEvent: {}
+[15.732251] (-) TimerEvent: {}
+[15.832560] (-) TimerEvent: {}
+[15.935771] (-) TimerEvent: {}
+[16.043773] (-) TimerEvent: {}
+[16.144131] (-) TimerEvent: {}
+[16.244512] (-) TimerEvent: {}
+[16.344904] (-) TimerEvent: {}
+[16.446894] (-) TimerEvent: {}
+[16.547258] (-) TimerEvent: {}
+[16.651778] (-) TimerEvent: {}
+[16.752146] (-) TimerEvent: {}
+[16.852537] (-) TimerEvent: {}
+[16.952834] (-) TimerEvent: {}
+[17.053139] (-) TimerEvent: {}
+[17.153504] (-) TimerEvent: {}
+[17.256423] (-) TimerEvent: {}
+[17.359482] (-) TimerEvent: {}
+[17.460185] (-) TimerEvent: {}
+[17.562384] (-) TimerEvent: {}
+[17.662768] (-) TimerEvent: {}
+[17.767195] (-) TimerEvent: {}
+[17.867805] (-) TimerEvent: {}
+[17.971782] (-) TimerEvent: {}
+[18.074852] (-) TimerEvent: {}
+[18.175776] (-) TimerEvent: {}
+[18.270725] (amr_pkg) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable transformbroadcaster\x1b[0m\n'}
+[18.275872] (-) TimerEvent: {}
+[18.376276] (-) TimerEvent: {}
+[18.476692] (-) TimerEvent: {}
+[18.577097] (-) TimerEvent: {}
+[18.677488] (-) TimerEvent: {}
+[18.777929] (-) TimerEvent: {}
+[18.840750] (amr_pkg) StdoutLine: {'line': b'[ 75%] Built target transformbroadcaster\n'}
+[18.878055] (-) TimerEvent: {}
+[18.978414] (-) TimerEvent: {}
+[19.078799] (-) TimerEvent: {}
+[19.179263] (-) TimerEvent: {}
+[19.279706] (-) TimerEvent: {}
+[19.380111] (-) TimerEvent: {}
+[19.480485] (-) TimerEvent: {}
+[19.580780] (-) TimerEvent: {}
+[19.681083] (-) TimerEvent: {}
+[19.781386] (-) TimerEvent: {}
+[19.881680] (-) TimerEvent: {}
+[19.981988] (-) TimerEvent: {}
+[20.082369] (-) TimerEvent: {}
+[20.182678] (-) TimerEvent: {}
+[20.283049] (-) TimerEvent: {}
+[20.383436] (-) TimerEvent: {}
+[20.483810] (-) TimerEvent: {}
+[20.584187] (-) TimerEvent: {}
+[20.684569] (-) TimerEvent: {}
+[20.784964] (-) TimerEvent: {}
+[20.885362] (-) TimerEvent: {}
+[20.985772] (-) TimerEvent: {}
+[21.086184] (-) TimerEvent: {}
+[21.186577] (-) TimerEvent: {}
+[21.286916] (-) TimerEvent: {}
+[21.387224] (-) TimerEvent: {}
+[21.487596] (-) TimerEvent: {}
+[21.587997] (-) TimerEvent: {}
+[21.688277] (-) TimerEvent: {}
+[21.788561] (-) TimerEvent: {}
+[21.888848] (-) TimerEvent: {}
+[21.989135] (-) TimerEvent: {}
+[22.089441] (-) TimerEvent: {}
+[22.189802] (-) TimerEvent: {}
+[22.290154] (-) TimerEvent: {}
+[22.390506] (-) TimerEvent: {}
+[22.490872] (-) TimerEvent: {}
+[22.591215] (-) TimerEvent: {}
+[22.691566] (-) TimerEvent: {}
+[22.791877] (-) TimerEvent: {}
+[22.892177] (-) TimerEvent: {}
+[22.992529] (-) TimerEvent: {}
+[23.092867] (-) TimerEvent: {}
+[23.193155] (-) TimerEvent: {}
+[23.293437] (-) TimerEvent: {}
+[23.393730] (-) TimerEvent: {}
+[23.494033] (-) TimerEvent: {}
+[23.594372] (-) TimerEvent: {}
+[23.694651] (-) TimerEvent: {}
+[23.794888] (-) TimerEvent: {}
+[23.895299] (-) TimerEvent: {}
+[23.995629] (-) TimerEvent: {}
+[24.096035] (-) TimerEvent: {}
+[24.196423] (-) TimerEvent: {}
+[24.296769] (-) TimerEvent: {}
+[24.397050] (-) TimerEvent: {}
+[24.497337] (-) TimerEvent: {}
+[24.597642] (-) TimerEvent: {}
+[24.698005] (-) TimerEvent: {}
+[24.798339] (-) TimerEvent: {}
+[24.898613] (-) TimerEvent: {}
+[24.998897] (-) TimerEvent: {}
+[25.099184] (-) TimerEvent: {}
+[25.199468] (-) TimerEvent: {}
+[25.299768] (-) TimerEvent: {}
+[25.400150] (-) TimerEvent: {}
+[25.500498] (-) TimerEvent: {}
+[25.600849] (-) TimerEvent: {}
+[25.701246] (-) TimerEvent: {}
+[25.795870] (amr_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable orderoptimizer\x1b[0m\n'}
+[25.801329] (-) TimerEvent: {}
+[25.902119] (-) TimerEvent: {}
+[26.002510] (-) TimerEvent: {}
+[26.102810] (-) TimerEvent: {}
+[26.203103] (-) TimerEvent: {}
+[26.302396] (amr_pkg) StdoutLine: {'line': b'[100%] Built target orderoptimizer\n'}
+[26.303182] (-) TimerEvent: {}
+[26.332256] (amr_pkg) CommandEnded: {'returncode': 0}
+[26.402870] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'install'}
+[26.403147] (amr_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sahil/AMR_Order_Pickup/build/amr_pkg'], 'cwd': '/home/sahil/AMR_Order_Pickup/build/amr_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sahil'), ('LC_TIME', 'ps_AF'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sahil/AMR_Order_Pickup/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sahil'), ('OLDPWD', '/home/sahil'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ps_AF'), ('SYSTEMD_EXEC_PID', '1823'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sahil'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sahil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sahil-virtual-machine:@/tmp/.ICE-unix/1651,unix/sahil-virtual-machine:/tmp/.ICE-unix/1651'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ps_AF'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/598771b1_fb20_4146_9542_80d13627180a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ps_AF'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F9N6R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.201'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '48'), ('AMENT_PREFIX_PATH', '/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ps_AF'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ps_AF'), ('LC_IDENTIFICATION', 'ps_AF'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sahil/AMR_Order_Pickup/build/amr_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ps_AF'), ('LC_PAPER', 'ps_AF'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[26.404687] (-) TimerEvent: {}
+[26.419218] (amr_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.419355] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/amr_pkg/orderoptimizer\n'}
+[26.424963] (amr_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/amr_pkg/orderoptimizer" to ""\n'}
+[26.425134] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/amr_pkg/transformbroadcaster\n'}
+[26.426427] (amr_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/amr_pkg/transformbroadcaster" to ""\n'}
+[26.426567] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg\n'}
+[26.426794] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg\n'}
+[26.426970] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh\n'}
+[26.427111] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.dsv\n'}
+[26.427256] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/environment/path.sh\n'}
+[26.427402] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/environment/path.dsv\n'}
+[26.427538] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/local_setup.bash\n'}
+[26.427677] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/local_setup.sh\n'}
+[26.428568] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/local_setup.zsh\n'}
+[26.428686] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/local_setup.dsv\n'}
+[26.428826] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.dsv\n'}
+[26.429044] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/ament_index/resource_index/packages/amr_pkg\n'}
+[26.429191] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig.cmake\n'}
+[26.429305] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig-version.cmake\n'}
+[26.429449] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.xml\n'}
+[26.434563] (amr_pkg) CommandEnded: {'returncode': 0}
+[26.501974] (amr_pkg) JobEnded: {'identifier': 'amr_pkg', 'rc': 0}
+[26.502770] (-) EventReactorShutdown: {}
