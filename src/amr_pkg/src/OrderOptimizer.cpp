@@ -44,27 +44,44 @@ std::map<uint32_t, OrderInfo> orders_info_;
 class OrderOptimizerNode : public rclcpp::Node {
 public:
     OrderOptimizerNode() : Node("order_optimizer_node") {
-        this->declare_parameter<std::string>("directory_path", "/home/rahul/Downloads/amr_example_ROS/applicants_amr_example_1");
+        // this->declare_parameter<std::string>("directory_path", "/home/rahul/Downloads/amr_example_ROS/applicants_amr_example_1");
+        // this->get_parameter("directory_path", directory_path_);
+
+        this->declare_parameter<std::string>("directory_path", "");
         this->get_parameter("directory_path", directory_path_);
+
+        if (directory_path_.empty()) {
+            RCLCPP_ERROR(this->get_logger(), "Parameter 'directory_path' is not set. Exiting.");
+            rclcpp::shutdown();
+            return;
+        }
         
         orders_folder_path_ = directory_path_ + "/orders";
         config_folder_path_ = directory_path_ + "/configuration";
 
         loadProductConfig(config_folder_path_);
 
-        order_subscription_ = this->create_subscription<interfaces::msg::Order>(
-            "nextOrder", 10, std::bind(&OrderOptimizerNode::orderCallback, this, std::placeholders::_1));
-        
         // is called only at the begining of the day, before the first order
         position_subscription_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
             "currentPosition", 10, std::bind(&OrderOptimizerNode::positionCallback, this, std::placeholders::_1));
 
+        // wait for the first position to be received
+        rclcpp::Rate rate(1); 
+        while (!is_position_received_ && rclcpp::ok()) {
+            RCLCPP_INFO(this->get_logger(), "Waiting for AMR's Start Position...");
+            rclcpp::spin_some(this->get_node_base_interface());
+            rate.sleep();
+        }
+
+        order_subscription_ = this->create_subscription<interfaces::msg::Order>(
+            "nextOrder", 10, std::bind(&OrderOptimizerNode::orderCallback, this, std::placeholders::_1));
+        
         amr_publisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("order_path", 10);
 
         // initialize the AMR position to (0, 0) before the first order
         // comment this part when position sent from the topic
-        amr_position_x_ = 0.0;
-        amr_position_y_ = 0.0;
+        // amr_position_x_ = 0.0;
+        // amr_position_y_ = 0.0;
         is_first_order_ = true;
     }
 
@@ -99,6 +116,7 @@ private:
     void positionCallback(const std::shared_ptr<geometry_msgs::msg::PoseStamped> pose) {
         amr_position_x_ = pose->pose.position.x;
         amr_position_y_ = pose->pose.position.y;
+        is_position_received_ = true;
         RCLCPP_INFO(this->get_logger(), "Current AMR Position: X = %f, Y = %f", amr_position_x_, amr_position_y_);
     }
 
@@ -374,21 +392,22 @@ private:
         RCLCPP_INFO(this->get_logger(), "Working on Order Id: %u", order_id);
         rclcpp::sleep_for(std::chrono::milliseconds(1000));
 
-        publishAMRMarker(delivery_position.x, delivery_position.y);
 
         for (const auto& part : path) {
             if (part.part != "Delivery") {
-                publishAMRMarker(part.pick_x, part.pick_y);
                 RCLCPP_INFO(this->get_logger(), "Fetching '%s' of '%s' at (%.2f, %.2f)",
                             part.part.c_str(), part.product_name.c_str(), part.pick_x, part.pick_y);
                 amr_position_x_ = part.pick_x;
                 amr_position_y_ = part.pick_y;
+                publishAMRMarker(part.pick_x, part.pick_y);
                 rclcpp::sleep_for(std::chrono::milliseconds(1000));
             }
         }
         
         amr_position_x_ = delivery_position.x;
         amr_position_y_ = delivery_position.y;
+
+        publishAMRMarker(delivery_position.x, delivery_position.y);
 
         RCLCPP_INFO(this->get_logger(), "Delivering to Destination (%.2f, %.2f)", 
                                                     delivery_position.x, delivery_position.y);
@@ -425,10 +444,14 @@ private:
     std::map<std::string, ProductInfo> product_parts_;
     double last_delivery_x_ = 0.0;
     double last_delivery_y_ = 0.0;
-    bool is_first_order_ = true;
-    bool order_found;
+
     double amr_position_x_ = 0.0;
     double amr_position_y_ = 0.0;
+
+    bool is_first_order_ = true;
+    bool order_found;
+    bool is_position_received_;
+
     int delivery_marker_id = 0;
 };
 
