@@ -58,6 +58,7 @@ private:
 
     void orderCallback(const interfaces::msg::Order::SharedPtr msg) {
         uint32_t order_id = msg->order_id;
+        order_description = msg->description;
 
         // Clear the previous orders info
         orders_info_.clear();
@@ -84,7 +85,7 @@ private:
             start_position = {last_delivery_x_, last_delivery_y_};
         }
 
-        // After the first order is processed, update the flag
+ 
         is_first_order_ = false;
     }
 
@@ -227,12 +228,10 @@ private:
         std::vector<PartInfo> route;
         std::vector<PartInfo> locations = parts;
 
-        // Add the delivery location as the final destination
-        locations.push_back({"Delivery", delivery_x, delivery_y});
-
         double current_x = start_position.x;
         double current_y = start_position.y;
 
+        // Pick up all the parts first
         while (!locations.empty()) {
             double nearest_dist = std::numeric_limits<double>::infinity();
             size_t nearest_index = std::numeric_limits<size_t>::max();
@@ -253,6 +252,9 @@ private:
                 locations.erase(locations.begin() + nearest_index);
             }
         }
+
+        // After all parts are picked, add the delivery location
+        route.push_back({"Delivery", delivery_x, delivery_y});
 
         return route;
     }
@@ -286,7 +288,7 @@ private:
     
  
     void printPathDescription(uint32_t order_id, const std::vector<PartInfo>& path) {
-        RCLCPP_INFO(this->get_logger(), "Working on order %u", order_id);
+        RCLCPP_INFO(this->get_logger(), "Working on order %u, %s", order_id, order_description);
 
         int step = 1;
         for (const auto& part : path) {
@@ -297,10 +299,12 @@ private:
                 RCLCPP_INFO(this->get_logger(), "%d. Fetching part '%s' at x: %f, y: %f",
                             step++, part.part.c_str(), part.pick_x, part.pick_y);
             }
-            followPath(part);
+            followPath(part); // Move to the next location
         }
+
     }
 
+    std::string order_description = "";
 
     bool is_first_order_ = true;
     
