@@ -2,7 +2,7 @@
 # Steps to run the AMR Order Optimizer Code:
 
 1. Clone this repository, and build the workspace with:
-   $colcon build.
+   $colcon build
 
 2. $source /opt/ros/humble/setup.bash
    $source ~/{your_workspace}/install/setup.bash
