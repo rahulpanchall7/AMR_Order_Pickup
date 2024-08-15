@@ -1,0 +1,43 @@
+[0.012s] Invoking command in '/home/rahul/ros2_ws/build/amr_pkg': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6
+[0.090s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.279s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.340s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.346s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.359s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.375s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.395s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.456s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.460s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.604s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.682s] -- Found interfaces: 0.0.0 (/home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake)
+[0.694s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.722s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.859s] Error parsing '/home/rahul/ros2_ws/src/amr_pkg/package.xml':
+[0.961s] Traceback (most recent call last):
+[0.962s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.962s]     main()
+[0.962s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.962s]     raise e
+[0.962s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.962s]     package = parse_package_string(
+[0.962s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.963s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.963s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/rahul/ros2_ws/src/amr_pkg/package.xml':
+[0.963s] Error(s):
+[0.963s] - The generic dependency on 'visualization_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[1.000s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[1.000s]   execute_process(/usr/bin/python3
+[1.000s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.000s]   /home/rahul/ros2_ws/src/amr_pkg/package.xml
+[1.000s]   /home/rahul/ros2_ws/build/amr_pkg/ament_cmake_core/package.cmake) returned
+[1.000s]   error code 1
+[1.000s] Call Stack (most recent call first):
+[1.000s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.000s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[1.001s]   CMakeLists.txt:40 (ament_package)
+[1.001s] 
+[1.001s] [0m
+[1.001s] -- Configuring incomplete, errors occurred!
+[1.001s] See also "/home/rahul/ros2_ws/build/amr_pkg/CMakeFiles/CMakeOutput.log".
+[1.003s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[1.007s] Invoked command in '/home/rahul/ros2_ws/build/amr_pkg' returned '2': CMAKE_PREFIX_PATH=/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg /usr/bin/cmake --build /home/rahul/ros2_ws/build/amr_pkg -- -j6 -l6

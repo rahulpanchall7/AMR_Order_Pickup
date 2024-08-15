@@ -13,6 +13,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(yaml-cpp REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 add_executable(orderoptimizer src/OrderOptimizer.cpp)
 

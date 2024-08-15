@@ -1,6 +1,8 @@
 #include "rclcpp/rclcpp.hpp"
 #include "interfaces/msg/order.hpp"  
 #include "geometry_msgs/msg/pose_stamped.hpp"
+#include "visualization_msgs/msg/marker_array.hpp"
+#include "visualization_msgs/msg/marker.hpp"
 #include "yaml-cpp/yaml.h"
 #include <filesystem>
 #include <iostream>
@@ -52,6 +54,8 @@ public:
         
         position_subscription_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
             "currentPosition", 10, std::bind(&OrderOptimizerNode::positionCallback, this, std::placeholders::_1));
+
+        amr_publisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("order_path", 10);
     }
 
 private:
@@ -77,6 +81,10 @@ private:
             // Print the path description
             printPathDescription(order_id, route);
 
+            // Publish markers for the route
+            // publishMarkers(start_position, route);
+            publishMarkers(route);
+
             // Update the last delivery location for the next order
             last_delivery_x_ = order_info.delivery_x;
             last_delivery_y_ = order_info.delivery_y;
@@ -85,17 +93,15 @@ private:
             start_position = {last_delivery_x_, last_delivery_y_};
         }
 
- 
         is_first_order_ = false;
     }
-
 
     void positionCallback(const std::shared_ptr<geometry_msgs::msg::PoseStamped> pose) {
         amr_position_x_ = pose->pose.position.x;
         amr_position_y_ = pose->pose.position.y;
         RCLCPP_INFO(this->get_logger(), "Current AMR Position: X = %f, Y = %f", amr_position_x_, amr_position_y_);
     }
-    
+
     void loadOrderFiles(const std::string& file_path, uint32_t target_order_id)
     {
         std::vector<std::string> yaml_file_paths;
@@ -259,23 +265,54 @@ private:
         return route;
     }
 
+    void publishMarkers(const std::vector<PartInfo>& path) {
+        visualization_msgs::msg::MarkerArray marker_array;
+        // const Position& start_position,
+        // Create a marker for the AMR position
+        visualization_msgs::msg::Marker amr_marker;
+        amr_marker.header.frame_id = "map";
+        amr_marker.header.stamp = this->get_clock()->now();
+        amr_marker.ns = "order_path";
+        amr_marker.id = 0;
+        amr_marker.type = visualization_msgs::msg::Marker::CUBE;
+        amr_marker.action = visualization_msgs::msg::Marker::ADD;
+        amr_marker.pose.position.x = amr_position_x_;
+        amr_marker.pose.position.y = amr_position_y_;
+        amr_marker.pose.position.z = 0.0;
+        amr_marker.scale.x = 0.5;
+        amr_marker.scale.y = 0.5;
+        amr_marker.scale.z = 0.2;
+        amr_marker.color.a = 1.0;
+        amr_marker.color.r = 1.0;
+        amr_marker.color.g = 0.0;
+        amr_marker.color.b = 0.0;
+        marker_array.markers.push_back(amr_marker);
 
-
-    Position findNearestStartLocation(const Position& current_position) {
-        double min_distance = std::numeric_limits<double>::infinity();
-        Position nearest_location = {0.0, 0.0};
-
-        for (const auto& [order_id, order_info] : orders_info_) {
-            for (const auto& part : order_info.parts) {
-                double distance = calculateEucDistance(current_position.x, current_position.y, part.pick_x, part.pick_y);
-                if (distance < min_distance) {
-                    min_distance = distance;
-                    nearest_location = {part.pick_x, part.pick_y};
-                }
-            }
+        // Create markers for each part pickup location
+        int id = 1;
+        for (const auto& part : path) {
+            visualization_msgs::msg::Marker part_marker;
+            part_marker.header.frame_id = "map";
+            part_marker.header.stamp = this->get_clock()->now();
+            part_marker.ns = "order_path";
+            part_marker.id = id++;
+            part_marker.type = visualization_msgs::msg::Marker::CYLINDER;
+            part_marker.action = visualization_msgs::msg::Marker::ADD;
+            part_marker.pose.position.x = part.pick_x;
+            part_marker.pose.position.y = part.pick_y;
+            part_marker.pose.position.z = 0.0;
+            part_marker.scale.x = 0.3;
+            part_marker.scale.y = 0.3;
+            part_marker.scale.z = 0.3;
+            part_marker.color.a = 1.0;
+            part_marker.color.r = 0.0;
+            part_marker.color.g = 1.0;
+            part_marker.color.b = 0.0;
+            marker_array.markers.push_back(part_marker);
         }
 
-        return nearest_location;
+        // Publish the marker array
+        amr_publisher_->publish(marker_array);
     }
 
     void followPath(const PartInfo& part) {
@@ -286,9 +323,8 @@ private:
         // Implement movement code
     }
     
- 
     void printPathDescription(uint32_t order_id, const std::vector<PartInfo>& path) {
-        RCLCPP_INFO(this->get_logger(), "Working on order %u, %s", order_id, order_description);
+        RCLCPP_INFO(this->get_logger(), "Working on order %u, %s", order_id, order_description.c_str());
 
         int step = 1;
         for (const auto& part : path) {
@@ -322,6 +358,7 @@ private:
 
     rclcpp::Subscription<interfaces::msg::Order>::SharedPtr order_subscription_;
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr position_subscription_;
+    rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr amr_publisher_;
 };
 
 int main(int argc, char **argv) {
