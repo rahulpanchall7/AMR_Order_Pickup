@@ -20,7 +20,7 @@
 
 7. Publish on topic '/currentPosition' only once at begining before the first order to initialise the AMR's positon, as later on it uses a global
    variable to update the position:
-   $ros2 topic pub /currentPosition geometry_msgs/msg/PoseStamped "{
+   $ros2 topic pub -1 /currentPosition geometry_msgs/msg/PoseStamped "{
      header: {
        stamp: { sec: 0, nanosec: 0 },
        frame_id: 'map'
