@@ -1,0 +1,28 @@
+[0.034s] Invoking command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sahil/AMR_Order_Pickup/build/amr_pkg -- -j2 -l2
+[0.301s] [35m[1mConsolidate compiler generated dependencies of target orderoptimizer[0m
+[0.372s] [ 50%] Built target transformbroadcaster
+[0.375s] [ 75%] [32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o[0m
+[18.149s] [100%] [32m[1mLinking CXX executable orderoptimizer[0m
+[18.912s] [100%] Built target orderoptimizer
+[18.937s] Invoked command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg' returned '0': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sahil/AMR_Order_Pickup/build/amr_pkg -- -j2 -l2
+[19.014s] Invoking command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sahil/AMR_Order_Pickup/build/amr_pkg
+[19.035s] -- Install configuration: ""
+[19.037s] -- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/amr_pkg/orderoptimizer
+[19.059s] -- Set runtime path of "/home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/amr_pkg/orderoptimizer" to ""
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/lib/amr_pkg/transformbroadcaster
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.dsv
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/environment/path.sh
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/environment/path.dsv
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/local_setup.bash
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/local_setup.sh
+[19.059s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/local_setup.zsh
+[19.065s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/local_setup.dsv
+[19.065s] -- Installing: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.dsv
+[19.065s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/ament_index/resource_index/packages/amr_pkg
+[19.065s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig.cmake
+[19.065s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig-version.cmake
+[19.065s] -- Up-to-date: /home/sahil/AMR_Order_Pickup/install/amr_pkg/share/amr_pkg/package.xml
+[19.066s] Invoked command in '/home/sahil/AMR_Order_Pickup/build/amr_pkg' returned '0': AMENT_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/sahil/AMR_Order_Pickup/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sahil/AMR_Order_Pickup/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sahil/AMR_Order_Pickup/build/amr_pkg

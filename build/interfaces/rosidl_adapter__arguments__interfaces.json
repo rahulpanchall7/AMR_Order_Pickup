@@ -1,6 +1,6 @@
 {
   "package_name": "interfaces",
   "non_idl_tuples": [
-    "/home/rahul/ros2_ws/src/interfaces:msg/Order.msg"
+    "/home/sahil/AMR_Order_Pickup/src/interfaces:msg/Order.msg"
   ]
 }

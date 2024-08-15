@@ -400,12 +400,15 @@ private:
                 amr_position_x_ = part.pick_x;
                 amr_position_y_ = part.pick_y;
                 publishAMRMarker(part.pick_x, part.pick_y);
+                publishAMRMarker(part.pick_x, part.pick_y);
                 rclcpp::sleep_for(std::chrono::milliseconds(1000));
             }
         }
         
         amr_position_x_ = delivery_position.x;
         amr_position_y_ = delivery_position.y;
+
+        publishAMRMarker(delivery_position.x, delivery_position.y);
 
         publishAMRMarker(delivery_position.x, delivery_position.y);
 
