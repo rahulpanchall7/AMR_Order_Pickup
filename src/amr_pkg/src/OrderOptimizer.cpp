@@ -13,12 +13,13 @@
 #include <algorithm>
 #include <limits>
 
-//////////////////////////////////////////////
+////////////////////*********************////////////////////
 
 struct PartInfo {
     std::string part;
     double pick_x;
     double pick_y;
+    std::string product_name; 
 };
 
 struct ProductInfo {
@@ -125,7 +126,6 @@ private:
     }
 
     void processFile(const std::string& yaml_path, uint32_t target_order_id) {
-        // this is used to parse the yaml file, searches the target order id, in the files
         try {
             YAML::Node order_yaml = YAML::LoadFile(yaml_path);
             order_found = false;
@@ -137,13 +137,13 @@ private:
                         if (order_id == target_order_id) {
                             order_found = true;
                             OrderInfo order_info;
-                            //  extracting delivery and order details
                             order_info.delivery_x = item["cx"].as<double>();
                             order_info.delivery_y = item["cy"].as<double>();
                             last_delivery_x_ = order_info.delivery_x;
                             last_delivery_y_ = order_info.delivery_y;
                             std::vector<uint32_t> product_ids = item["products"].as<std::vector<uint32_t>>();
 
+                            // for saving the product id with parts 
                             for (const auto& product_id : product_ids) {
                                 auto it = std::find_if(product_parts_.begin(), product_parts_.end(),
                                     [product_id](const auto& pair) {
@@ -152,10 +152,10 @@ private:
 
                                 if (it != product_parts_.end()) {
                                     const ProductInfo& product_info = it->second;
-                                    // extract the parts information of the prodcuts
-
                                     for (const auto& part : product_info.parts) {
-                                        order_info.parts.push_back(part);
+                                        PartInfo enriched_part = part;
+                                        enriched_part.product_name = product_info.product; 
+                                        order_info.parts.push_back(enriched_part);
                                     }
                                 }
                             }
@@ -169,6 +169,7 @@ private:
             RCLCPP_ERROR(this->get_logger(), "Error loading YAML file %s: %s", yaml_path.c_str(), e.what());
         }
     }
+
 
     void loadProductConfig(const std::string& config_path) {
         // this function is to load all the product & parts related data into data structures
@@ -235,7 +236,7 @@ private:
         std::vector<PartInfo> locations = parts;
 
         // store the delivery location separately and remove it from the locations list
-        PartInfo delivery_location = {"Delivery", delivery_x, delivery_y};
+        PartInfo delivery_location = {"Delivery", delivery_x, delivery_y,""};
 
         double current_x = start_position.x;
         double current_y = start_position.y;
@@ -378,7 +379,8 @@ private:
         for (const auto& part : path) {
             if (part.part != "Delivery") {
                 publishAMRMarker(part.pick_x, part.pick_y);
-                RCLCPP_INFO(this->get_logger(), "Fetching %s at (%.2f, %.2f)", part.part.c_str(), part.pick_x, part.pick_y);
+                RCLCPP_INFO(this->get_logger(), "Fetching '%s' of '%s' at (%.2f, %.2f)",
+                            part.part.c_str(), part.product_name.c_str(), part.pick_x, part.pick_y);
                 amr_position_x_ = part.pick_x;
                 amr_position_y_ = part.pick_y;
                 rclcpp::sleep_for(std::chrono::milliseconds(1000));
