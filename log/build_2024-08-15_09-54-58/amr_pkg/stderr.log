@@ -1,0 +1,4 @@
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:[m[K In member function ‘[01m[Kvoid OrderOptimizerNode::publishAMRMarker(const std::vector<PartInfo>&)[m[K’:
+[01m[K/home/rahul/ros2_ws/src/amr_pkg/src/OrderOptimizer.cpp:265:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  265 |     void publishAMRMarker([01;35m[Kconst std::vector<PartInfo>& path[m[K)
+      |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K

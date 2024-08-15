@@ -1,0 +1,341 @@
+[0.000000] (-) TimerEvent: {}
+[0.000453] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.000710] (amr_pkg) JobQueued: {'identifier': 'amr_pkg', 'dependencies': OrderedDict([('interfaces', '/home/rahul/ros2_ws/install/interfaces')])}
+[0.000764] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.010064] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.010902] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[0.011764] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rahul/ros2_ws/build/interfaces', '--', '-j6', '-l6'], 'cwd': '/home/rahul/ros2_ws/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rahul'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rahul/ros2_ws/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rahul'), ('OLDPWD', '/home/rahul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1295'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rahul/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rahul'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rahul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rahul-VirtualBox:@/tmp/.ICE-unix/946,unix/rahul-VirtualBox:/tmp/.ICE-unix/946'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/20bd1a2b_eda4_42c8_9314_b19179c6e89a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4DL3R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2716'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rahul/ros2_ws/build/interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[0.090632] (interfaces) StdoutLine: {'line': b'[  9%] Built target interfaces__cpp\n'}
+[0.091083] (interfaces) StdoutLine: {'line': b'[ 12%] Built target interfaces__rosidl_generator_c\n'}
+[0.098816] (-) TimerEvent: {}
+[0.111420] (interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_interfaces\n'}
+[0.140785] (interfaces) StdoutLine: {'line': b'[ 22%] Built target interfaces__rosidl_typesupport_cpp\n'}
+[0.141463] (interfaces) StdoutLine: {'line': b'[ 32%] Built target interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.155830] (interfaces) StdoutLine: {'line': b'[ 41%] Built target interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.164913] (interfaces) StdoutLine: {'line': b'[ 51%] Built target interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.165866] (interfaces) StdoutLine: {'line': b'[ 61%] Built target interfaces__rosidl_typesupport_introspection_c\n'}
+[0.176467] (interfaces) StdoutLine: {'line': b'[ 70%] Built target interfaces__rosidl_typesupport_c\n'}
+[0.208191] (interfaces) StdoutLine: {'line': b'[ 70%] Built target interfaces\n'}
+[0.209445] (-) TimerEvent: {}
+[0.242394] (interfaces) StdoutLine: {'line': b'[ 74%] Built target interfaces__py\n'}
+[0.277657] (interfaces) StdoutLine: {'line': b'[ 80%] Built target interfaces__rosidl_generator_py\n'}
+[0.307696] (interfaces) StdoutLine: {'line': b'[ 93%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.307928] (interfaces) StdoutLine: {'line': b'[ 93%] Built target interfaces__rosidl_typesupport_c__pyext\n'}
+[0.310536] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.310750] (-) TimerEvent: {}
+[0.399457] (interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.400630] (interfaces) StdoutLine: {'line': b'writing interfaces.egg-info/PKG-INFO\n'}
+[0.401120] (interfaces) StdoutLine: {'line': b'writing dependency_links to interfaces.egg-info/dependency_links.txt\n'}
+[0.401400] (interfaces) StdoutLine: {'line': b'writing top-level names to interfaces.egg-info/top_level.txt\n'}
+[0.405019] (interfaces) StdoutLine: {'line': b"reading manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[0.405815] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[0.415668] (-) TimerEvent: {}
+[0.454207] (interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_interfaces_egg\n'}
+[0.476073] (interfaces) CommandEnded: {'returncode': 0}
+[0.515894] (-) TimerEvent: {}
+[0.584682] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[0.600192] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rahul/ros2_ws/build/interfaces'], 'cwd': '/home/rahul/ros2_ws/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rahul'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rahul/ros2_ws/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rahul'), ('OLDPWD', '/home/rahul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1295'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rahul/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rahul'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rahul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rahul-VirtualBox:@/tmp/.ICE-unix/946,unix/rahul-VirtualBox:/tmp/.ICE-unix/946'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/20bd1a2b_eda4_42c8_9314_b19179c6e89a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4DL3R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2716'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rahul/ros2_ws/build/interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[0.612102] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.612558] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces\n'}
+[0.612754] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces\n'}
+[0.613841] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.614277] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/order.h\n'}
+[0.614342] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.614396] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.614511] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__struct.h\n'}
+[0.614565] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__functions.c\n'}
+[0.614616] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__type_support.h\n'}
+[0.614672] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__functions.h\n'}
+[0.614723] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/environment/library_path.sh\n'}
+[0.614773] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/environment/library_path.dsv\n'}
+[0.614824] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_generator_c.so\n'}
+[0.614877] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces\n'}
+[0.614927] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.614977] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.615030] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.615352] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__rosidl_typesupport_fastrtps_c.h\n'}
+[0.615426] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.615513] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces\n'}
+[0.615580] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.615644] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.615709] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.615798] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__rosidl_typesupport_introspection_c.h\n'}
+[0.615856] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__type_support.c\n'}
+[0.616417] (-) TimerEvent: {}
+[0.616745] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.616929] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so\n'}
+[0.617004] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces\n'}
+[0.617059] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.617180] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.617243] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__builder.hpp\n'}
+[0.617299] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__traits.hpp\n'}
+[0.617412] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__struct.hpp\n'}
+[0.617470] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/order.hpp\n'}
+[0.617587] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces\n'}
+[0.617648] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.617700] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.617759] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/dds_fastrtps\n'}
+[0.617923] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.618306] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.618399] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.618581] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces\n'}
+[0.618637] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.618689] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.618739] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.618797] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/detail/order__type_support.cpp\n'}
+[0.618852] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.618904] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so\n'}
+[0.618955] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/environment/pythonpath.sh\n'}
+[0.619005] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/environment/pythonpath.dsv\n'}
+[0.619055] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info\n'}
+[0.619106] (interfaces) StdoutLine: {'line': b'-- Installing: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.619176] (interfaces) StdoutLine: {'line': b'-- Installing: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.619231] (interfaces) StdoutLine: {'line': b'-- Installing: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.619302] (interfaces) StdoutLine: {'line': b'-- Installing: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.619357] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces\n'}
+[0.619409] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.619462] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.619514] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.619566] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.619617] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.619668] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py\n'}
+[0.619736] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so\n'}
+[0.619793] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.619847] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg\n'}
+[0.619899] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_order_s.c\n'}
+[0.619950] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_order.py\n'}
+[0.620001] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py\n'}
+[0.658802] (interfaces) StdoutLine: {'line': b"Listing '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...\n"}
+[0.659164] (interfaces) StdoutLine: {'line': b"Listing '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg'...\n"}
+[0.668016] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.668764] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.672225] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.672584] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_generator_py.so\n'}
+[0.672882] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/msg/Order.idl\n'}
+[0.673065] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/msg/Order.msg\n'}
+[0.673164] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces\n'}
+[0.673308] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces\n'}
+[0.673408] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.sh\n'}
+[0.673501] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv\n'}
+[0.673646] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/environment/path.sh\n'}
+[0.673741] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/environment/path.dsv\n'}
+[0.673821] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/local_setup.bash\n'}
+[0.673903] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/local_setup.sh\n'}
+[0.673988] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/local_setup.zsh\n'}
+[0.674152] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/local_setup.dsv\n'}
+[0.674258] (interfaces) StdoutLine: {'line': b'-- Installing: /home/rahul/ros2_ws/install/interfaces/share/interfaces/package.dsv\n'}
+[0.674347] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/ament_index/resource_index/packages/interfaces\n'}
+[0.674485] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.674586] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.674830] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.675088] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.675253] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.675470] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.675655] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.675915] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.676159] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.676635] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.677043] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.678055] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.678160] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.678231] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.678306] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.678377] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.678453] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.678617] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.678727] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.678902] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.679070] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.679145] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.679213] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.679283] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.679350] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake\n'}
+[0.679418] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake\n'}
+[0.679488] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/interfaces/share/interfaces/package.xml\n'}
+[0.683275] (interfaces) CommandEnded: {'returncode': 0}
+[0.721336] (-) TimerEvent: {}
+[0.823166] (-) TimerEvent: {}
+[0.843047] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[0.844931] (amr_pkg) JobStarted: {'identifier': 'amr_pkg'}
+[0.859310] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'cmake'}
+[0.860331] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'build'}
+[0.861905] (amr_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rahul/ros2_ws/build/amr_pkg', '--', '-j6', '-l6'], 'cwd': '/home/rahul/ros2_ws/build/amr_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rahul'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rahul/ros2_ws/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rahul'), ('OLDPWD', '/home/rahul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1295'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rahul/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rahul'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rahul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rahul-VirtualBox:@/tmp/.ICE-unix/946,unix/rahul-VirtualBox:/tmp/.ICE-unix/946'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/20bd1a2b_eda4_42c8_9314_b19179c6e89a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4DL3R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2716'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rahul/ros2_ws/build/amr_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble')]), 'shell': False}
+[0.924188] (-) TimerEvent: {}
+[0.943222] (amr_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target orderoptimizer\x1b[0m\n'}
+[0.978139] (amr_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.o\x1b[0m\n'}
+[0.981277] (amr_pkg) StdoutLine: {'line': b'[ 75%] Built target transformbroadcaster\n'}
+[1.024593] (-) TimerEvent: {}
+[1.125117] (-) TimerEvent: {}
+[1.225773] (-) TimerEvent: {}
+[1.326264] (-) TimerEvent: {}
+[1.427019] (-) TimerEvent: {}
+[1.527674] (-) TimerEvent: {}
+[1.628133] (-) TimerEvent: {}
+[1.737484] (-) TimerEvent: {}
+[1.838588] (-) TimerEvent: {}
+[1.939316] (-) TimerEvent: {}
+[2.040101] (-) TimerEvent: {}
+[2.140778] (-) TimerEvent: {}
+[2.241303] (-) TimerEvent: {}
+[2.341944] (-) TimerEvent: {}
+[2.442557] (-) TimerEvent: {}
+[2.543761] (-) TimerEvent: {}
+[2.644414] (-) TimerEvent: {}
+[2.745312] (-) TimerEvent: {}
+[2.846313] (-) TimerEvent: {}
+[2.947299] (-) TimerEvent: {}
+[3.048782] (-) TimerEvent: {}
+[3.149689] (-) TimerEvent: {}
+[3.251045] (-) TimerEvent: {}
+[3.351628] (-) TimerEvent: {}
+[3.453669] (-) TimerEvent: {}
+[3.554618] (-) TimerEvent: {}
+[3.655257] (-) TimerEvent: {}
+[3.755944] (-) TimerEvent: {}
+[3.856855] (-) TimerEvent: {}
+[3.957366] (-) TimerEvent: {}
+[4.057886] (-) TimerEvent: {}
+[4.158519] (-) TimerEvent: {}
+[4.259047] (-) TimerEvent: {}
+[4.359624] (-) TimerEvent: {}
+[4.460079] (-) TimerEvent: {}
+[4.560869] (-) TimerEvent: {}
+[4.661458] (-) TimerEvent: {}
+[4.762073] (-) TimerEvent: {}
+[4.862784] (-) TimerEvent: {}
+[4.963429] (-) TimerEvent: {}
+[5.064016] (-) TimerEvent: {}
+[5.164806] (-) TimerEvent: {}
+[5.265750] (-) TimerEvent: {}
+[5.366403] (-) TimerEvent: {}
+[5.467770] (-) TimerEvent: {}
+[5.568718] (-) TimerEvent: {}
+[5.669576] (-) TimerEvent: {}
+[5.770406] (-) TimerEvent: {}
+[5.871367] (-) TimerEvent: {}
+[5.972194] (-) TimerEvent: {}
+[6.072879] (-) TimerEvent: {}
+[6.173643] (-) TimerEvent: {}
+[6.274295] (-) TimerEvent: {}
+[6.381596] (-) TimerEvent: {}
+[6.482568] (-) TimerEvent: {}
+[6.583252] (-) TimerEvent: {}
+[6.683810] (-) TimerEvent: {}
+[6.784318] (-) TimerEvent: {}
+[6.885193] (-) TimerEvent: {}
+[6.985812] (-) TimerEvent: {}
+[7.086892] (-) TimerEvent: {}
+[7.188689] (-) TimerEvent: {}
+[7.289723] (-) TimerEvent: {}
+[7.390196] (-) TimerEvent: {}
+[7.490835] (-) TimerEvent: {}
+[7.592686] (-) TimerEvent: {}
+[7.695021] (-) TimerEvent: {}
+[7.796615] (-) TimerEvent: {}
+[7.897525] (-) TimerEvent: {}
+[7.998369] (-) TimerEvent: {}
+[8.099165] (-) TimerEvent: {}
+[8.200063] (-) TimerEvent: {}
+[8.300671] (-) TimerEvent: {}
+[8.401675] (-) TimerEvent: {}
+[8.502649] (-) TimerEvent: {}
+[8.603971] (-) TimerEvent: {}
+[8.705768] (-) TimerEvent: {}
+[8.806381] (-) TimerEvent: {}
+[8.907695] (-) TimerEvent: {}
+[9.008242] (-) TimerEvent: {}
+[9.109016] (-) TimerEvent: {}
+[9.209743] (-) TimerEvent: {}
+[9.311165] (-) TimerEvent: {}
+[9.411847] (-) TimerEvent: {}
+[9.512496] (-) TimerEvent: {}
+[9.613002] (-) TimerEvent: {}
+[9.713807] (-) TimerEvent: {}
+[9.814732] (-) TimerEvent: {}
+[9.916474] (-) TimerEvent: {}
+[10.017724] (-) TimerEvent: {}
+[10.118455] (-) TimerEvent: {}
+[10.219074] (-) TimerEvent: {}
+[10.333277] (-) TimerEvent: {}
+[10.434475] (-) TimerEvent: {}
+[10.548166] (-) TimerEvent: {}
+[10.678526] (-) TimerEvent: {}
+[10.780129] (-) TimerEvent: {}
+[10.899847] (-) TimerEvent: {}
+[11.063916] (-) TimerEvent: {}
+[11.209565] (-) TimerEvent: {}
+[11.340473] (-) TimerEvent: {}
+[11.443720] (-) TimerEvent: {}
+[11.562621] (-) TimerEvent: {}
+[11.672877] (-) TimerEvent: {}
+[11.773821] (-) TimerEvent: {}
+[11.880261] (-) TimerEvent: {}
+[12.038462] (-) TimerEvent: {}
+[12.231409] (-) TimerEvent: {}
+[12.473994] (-) TimerEvent: {}
+[12.579485] (-) TimerEvent: {}
+[12.749414] (-) TimerEvent: {}
+[12.850311] (-) TimerEvent: {}
+[12.951034] (-) TimerEvent: {}
+[13.052606] (-) TimerEvent: {}
+[13.241323] (-) TimerEvent: {}
+[13.353288] (-) TimerEvent: {}
+[13.464958] (-) TimerEvent: {}
+[13.685019] (-) TimerEvent: {}
+[13.794954] (-) TimerEvent: {}
+[14.164024] (-) TimerEvent: {}
+[14.278555] (-) TimerEvent: {}
+[14.422777] (-) TimerEvent: {}
+[14.536302] (-) TimerEvent: {}
+[14.653120] (-) TimerEvent: {}
+[14.756274] (-) TimerEvent: {}
+[14.885545] (-) TimerEvent: {}
+[15.062258] (-) TimerEvent: {}
+[15.173707] (-) TimerEvent: {}
+[15.282748] (-) TimerEvent: {}
+[15.383823] (-) TimerEvent: {}
+[15.519962] (-) TimerEvent: {}
+[15.651279] (-) TimerEvent: {}
+[15.787923] (-) TimerEvent: {}
+[15.907928] (-) TimerEvent: {}
+[16.035936] (-) TimerEvent: {}
+[16.252784] (amr_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable orderoptimizer\x1b[0m\n'}
+[16.253071] (-) TimerEvent: {}
+[16.353914] (-) TimerEvent: {}
+[16.455013] (-) TimerEvent: {}
+[16.555532] (-) TimerEvent: {}
+[16.659412] (-) TimerEvent: {}
+[16.782156] (-) TimerEvent: {}
+[16.883465] (-) TimerEvent: {}
+[16.984255] (-) TimerEvent: {}
+[17.085762] (-) TimerEvent: {}
+[17.186630] (-) TimerEvent: {}
+[17.287634] (-) TimerEvent: {}
+[17.388134] (-) TimerEvent: {}
+[17.390366] (amr_pkg) StdoutLine: {'line': b'[100%] Built target orderoptimizer\n'}
+[17.408265] (amr_pkg) CommandEnded: {'returncode': 0}
+[17.450963] (amr_pkg) JobProgress: {'identifier': 'amr_pkg', 'progress': 'install'}
+[17.451360] (amr_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rahul/ros2_ws/build/amr_pkg'], 'cwd': '/home/rahul/ros2_ws/build/amr_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rahul'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rahul/ros2_ws/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rahul'), ('OLDPWD', '/home/rahul'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '1295'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rahul/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rahul'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rahul'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rahul-VirtualBox:@/tmp/.ICE-unix/946,unix/rahul-VirtualBox:/tmp/.ICE-unix/946'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/20bd1a2b_eda4_42c8_9314_b19179c6e89a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4DL3R2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2716'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rahul/ros2_ws/install/amr_pkg:/home/rahul/ros2_ws/install/interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rahul/ros2_ws/build/amr_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rahul/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rahul/ros2_ws/install/interfaces:/home/rahul/ros2_ws/install/amr_pkg:/opt/ros/humble')]), 'shell': False}
+[17.462121] (amr_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.462506] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer\n'}
+[17.476075] (amr_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/orderoptimizer" to ""\n'}
+[17.476502] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/lib/amr_pkg/transformbroadcaster\n'}
+[17.476574] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/package_run_dependencies/amr_pkg\n'}
+[17.476834] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/parent_prefix_path/amr_pkg\n'}
+[17.476918] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.sh\n'}
+[17.477065] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/ament_prefix_path.dsv\n'}
+[17.477243] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.sh\n'}
+[17.477306] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/environment/path.dsv\n'}
+[17.477395] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.bash\n'}
+[17.477449] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.sh\n'}
+[17.477501] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.zsh\n'}
+[17.477553] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/local_setup.dsv\n'}
+[17.477604] (amr_pkg) StdoutLine: {'line': b'-- Installing: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.dsv\n'}
+[17.477655] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/ament_index/resource_index/packages/amr_pkg\n'}
+[17.477777] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig.cmake\n'}
+[17.477834] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/cmake/amr_pkgConfig-version.cmake\n'}
+[17.477886] (amr_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rahul/ros2_ws/install/amr_pkg/share/amr_pkg/package.xml\n'}
+[17.480291] (amr_pkg) CommandEnded: {'returncode': 0}
+[17.488234] (-) TimerEvent: {}
+[17.543216] (amr_pkg) JobEnded: {'identifier': 'amr_pkg', 'rc': 0}
+[17.544329] (-) EventReactorShutdown: {}

@@ -210,6 +210,19 @@ orderoptimizer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderoptimizer.dir/build.make CMakeFiles/orderoptimizer.dir/build
 .PHONY : orderoptimizer/fast
 
+#=============================================================================
+# Target rules for targets named transformbroadcaster
+
+# Build rule for target.
+transformbroadcaster: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transformbroadcaster
+.PHONY : transformbroadcaster
+
+# fast build rule for target.
+transformbroadcaster/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transformbroadcaster.dir/build.make CMakeFiles/transformbroadcaster.dir/build
+.PHONY : transformbroadcaster/fast
+
 src/OrderOptimizer.o: src/OrderOptimizer.cpp.o
 .PHONY : src/OrderOptimizer.o
 
@@ -234,6 +247,30 @@ src/OrderOptimizer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderoptimizer.dir/build.make CMakeFiles/orderoptimizer.dir/src/OrderOptimizer.cpp.s
 .PHONY : src/OrderOptimizer.cpp.s
 
+src/TransformBroadcaster.o: src/TransformBroadcaster.cpp.o
+.PHONY : src/TransformBroadcaster.o
+
+# target to build an object file
+src/TransformBroadcaster.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transformbroadcaster.dir/build.make CMakeFiles/transformbroadcaster.dir/src/TransformBroadcaster.cpp.o
+.PHONY : src/TransformBroadcaster.cpp.o
+
+src/TransformBroadcaster.i: src/TransformBroadcaster.cpp.i
+.PHONY : src/TransformBroadcaster.i
+
+# target to preprocess a source file
+src/TransformBroadcaster.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transformbroadcaster.dir/build.make CMakeFiles/transformbroadcaster.dir/src/TransformBroadcaster.cpp.i
+.PHONY : src/TransformBroadcaster.cpp.i
+
+src/TransformBroadcaster.s: src/TransformBroadcaster.cpp.s
+.PHONY : src/TransformBroadcaster.s
+
+# target to generate assembly for a file
+src/TransformBroadcaster.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transformbroadcaster.dir/build.make CMakeFiles/transformbroadcaster.dir/src/TransformBroadcaster.cpp.s
+.PHONY : src/TransformBroadcaster.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... amr_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... orderoptimizer"
+	@echo "... transformbroadcaster"
 	@echo "... src/OrderOptimizer.o"
 	@echo "... src/OrderOptimizer.i"
 	@echo "... src/OrderOptimizer.s"
+	@echo "... src/TransformBroadcaster.o"
+	@echo "... src/TransformBroadcaster.i"
+	@echo "... src/TransformBroadcaster.s"
 .PHONY : help
 
 

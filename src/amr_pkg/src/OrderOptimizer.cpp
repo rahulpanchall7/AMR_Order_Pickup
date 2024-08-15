@@ -56,6 +56,12 @@ public:
             "currentPosition", 10, std::bind(&OrderOptimizerNode::positionCallback, this, std::placeholders::_1));
 
         amr_publisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("order_path", 10);
+
+        // Initialize the AMR position to (0, 0) before the first order
+        // comment this part when position sent from the topic
+        amr_position_x_ = 0.0;
+        amr_position_y_ = 0.0;
+        is_first_order_ = true;
     }
 
 private:
@@ -63,37 +69,29 @@ private:
     void orderCallback(const interfaces::msg::Order::SharedPtr msg) {
         uint32_t order_id = msg->order_id;
         order_description = msg->description;
+        RCLCPP_INFO(this->get_logger(), "Order Id: %u, Description = %s received", 
+            order_id, order_description.c_str());
 
-        // Clear the previous orders info
         orders_info_.clear();
 
-        // Load the order files for the given order_id
         loadOrderFiles(orders_folder_path_, order_id);
-
-        // Set the initial start position based on whether this is the first order or not
-        Position start_position = is_first_order_ ? Position{amr_position_x_, amr_position_y_} : Position{last_delivery_x_, last_delivery_y_};
 
         // For each order, process and generate a route
         for (const auto& [order_id, order_info] : orders_info_) {
-            // Generate the shortest path for the order
-            std::vector<PartInfo> route = solveShortestPath(order_info.parts, order_info.delivery_x, order_info.delivery_y, start_position);
 
+            std::vector<PartInfo> route = solveShortestPath(order_info.parts, order_info.delivery_x, order_info.delivery_y, {amr_position_x_, amr_position_y_});
+            
             // Print the path description
-            printPathDescription(order_id, route);
+            followPath(order_id, route,{last_delivery_x_, last_delivery_y_});
+            publishPickupMarkers(route);
 
-            // Publish markers for the route
-            // publishMarkers(start_position, route);
-            publishMarkers(route);
+            // Update the AMR position to the delivery location after completing the order
+            amr_position_x_ = order_info.delivery_x;
+            amr_position_y_ = order_info.delivery_y;
 
-            // Update the last delivery location for the next order
-            last_delivery_x_ = order_info.delivery_x;
-            last_delivery_y_ = order_info.delivery_y;
-
-            // Update the start position for the next order based on the current delivery
-            start_position = {last_delivery_x_, last_delivery_y_};
+            // No longer the first order after processing one
+            is_first_order_ = false;
         }
-
-        is_first_order_ = false;
     }
 
     void positionCallback(const std::shared_ptr<geometry_msgs::msg::PoseStamped> pose) {
@@ -102,36 +100,29 @@ private:
         RCLCPP_INFO(this->get_logger(), "Current AMR Position: X = %f, Y = %f", amr_position_x_, amr_position_y_);
     }
 
-    void loadOrderFiles(const std::string& file_path, uint32_t target_order_id)
-    {
+    void loadOrderFiles(const std::string& file_path, uint32_t target_order_id) {
         std::vector<std::string> yaml_file_paths;
-        for (const auto& entry : std::filesystem::directory_iterator(file_path))
-        {
-            if (entry.is_regular_file() && entry.path().extension() == ".yaml")
-            {
+        for (const auto& entry : std::filesystem::directory_iterator(file_path)) {
+            if (entry.is_regular_file() && entry.path().extension() == ".yaml") {
                 yaml_file_paths.push_back(entry.path().string());
             }
         }
 
         std::vector<std::future<void>> futures;
 
-        for (const auto& yaml_path : yaml_file_paths)
-        {
-            futures.push_back(std::async(std::launch::async, [this, yaml_path, target_order_id]()
-            {
+        for (const auto& yaml_path : yaml_file_paths) {
+            futures.push_back(std::async(std::launch::async, [this, yaml_path, target_order_id]() {
                 processFile(yaml_path, target_order_id);
             }));
         }
 
-        for (auto& future : futures)
-        {
+        for (auto& future : futures) {
             future.get();
         }
         RCLCPP_INFO(this->get_logger(), "Finished processing for Order Id: %u", target_order_id);
     }
 
-    void processFile(const std::string& yaml_path, uint32_t target_order_id) 
-    {
+    void processFile(const std::string& yaml_path, uint32_t target_order_id) {
         try {
             YAML::Node order_yaml = YAML::LoadFile(yaml_path);
 
@@ -143,6 +134,8 @@ private:
                             OrderInfo order_info;
                             order_info.delivery_x = item["cx"].as<double>();
                             order_info.delivery_y = item["cy"].as<double>();
+                            last_delivery_x_ = order_info.delivery_x;
+                            last_delivery_y_ = order_info.delivery_y;
                             std::vector<uint32_t> product_ids = item["products"].as<std::vector<uint32_t>>();
 
                             for (const auto& product_id : product_ids) {
@@ -234,10 +227,13 @@ private:
         std::vector<PartInfo> route;
         std::vector<PartInfo> locations = parts;
 
+        // Store the delivery location separately and remove it from the locations list
+        PartInfo delivery_location = {"Delivery", delivery_x, delivery_y};
+
         double current_x = start_position.x;
         double current_y = start_position.y;
 
-        // Pick up all the parts first
+        // Perform the search for nearest pickup locations
         while (!locations.empty()) {
             double nearest_dist = std::numeric_limits<double>::infinity();
             size_t nearest_index = std::numeric_limits<size_t>::max();
@@ -259,109 +255,135 @@ private:
             }
         }
 
-        // After all parts are picked, add the delivery location
-        route.push_back({"Delivery", delivery_x, delivery_y});
+        // Add the delivery location as the final destination
+        route.push_back(delivery_location);
+
+        // Optionally, log the final route and distance
+        double total_distance = 0.0;
+        Position last_position = start_position;
+
+        for (const auto& part : route) {
+            total_distance += calculateEucDistance(last_position.x, last_position.y, part.pick_x, part.pick_y);
+            last_position.x = part.pick_x;
+            last_position.y = part.pick_y;
+        }
+
+        // RCLCPP_INFO(this->get_logger(), "Final route distance: %.2f", total_distance);
 
         return route;
     }
 
-    void publishMarkers(const std::vector<PartInfo>& path) {
+
+
+
+    void publishAMRMarker(double x, double y) {
+        visualization_msgs::msg::Marker marker;
+        marker.header.frame_id = "map";
+        marker.header.stamp = this->get_clock()->now();
+        marker.ns = "amr_position";
+        marker.id = 0;
+        marker.type = visualization_msgs::msg::Marker::CUBE;
+        marker.action = visualization_msgs::msg::Marker::ADD;
+        marker.pose.position.x = x;
+        marker.pose.position.y = y;
+        marker.pose.position.z = 0.5; // Position Z value
+        marker.pose.orientation.x = 0.0;
+        marker.pose.orientation.y = 0.0;
+        marker.pose.orientation.z = 0.0;
+        marker.pose.orientation.w = 1.0;
+        marker.scale.x = 100.0;  // Scale X
+        marker.scale.y = 100.0;  // Scale Y
+        marker.scale.z = 100.0;  // Scale Z
+        marker.color.a = 1.0;   // Alpha (opacity)
+        marker.color.r = 1.0;   // Red
+        marker.color.g = 0.0;   // Green
+        marker.color.b = 0.0;   // Blue
+
         visualization_msgs::msg::MarkerArray marker_array;
-        // const Position& start_position,
-        // Create a marker for the AMR position
-        visualization_msgs::msg::Marker amr_marker;
-        amr_marker.header.frame_id = "map";
-        amr_marker.header.stamp = this->get_clock()->now();
-        amr_marker.ns = "order_path";
-        amr_marker.id = 0;
-        amr_marker.type = visualization_msgs::msg::Marker::CUBE;
-        amr_marker.action = visualization_msgs::msg::Marker::ADD;
-        amr_marker.pose.position.x = amr_position_x_;
-        amr_marker.pose.position.y = amr_position_y_;
-        amr_marker.pose.position.z = 0.0;
-        amr_marker.scale.x = 0.5;
-        amr_marker.scale.y = 0.5;
-        amr_marker.scale.z = 0.2;
-        amr_marker.color.a = 1.0;
-        amr_marker.color.r = 1.0;
-        amr_marker.color.g = 0.0;
-        amr_marker.color.b = 0.0;
-        marker_array.markers.push_back(amr_marker);
-
-        // Create markers for each part pickup location
-        int id = 1;
-        for (const auto& part : path) {
-            visualization_msgs::msg::Marker part_marker;
-            part_marker.header.frame_id = "map";
-            part_marker.header.stamp = this->get_clock()->now();
-            part_marker.ns = "order_path";
-            part_marker.id = id++;
-            part_marker.type = visualization_msgs::msg::Marker::CYLINDER;
-            part_marker.action = visualization_msgs::msg::Marker::ADD;
-            part_marker.pose.position.x = part.pick_x;
-            part_marker.pose.position.y = part.pick_y;
-            part_marker.pose.position.z = 0.0;
-            part_marker.scale.x = 0.3;
-            part_marker.scale.y = 0.3;
-            part_marker.scale.z = 0.3;
-            part_marker.color.a = 1.0;
-            part_marker.color.r = 0.0;
-            part_marker.color.g = 1.0;
-            part_marker.color.b = 0.0;
-            marker_array.markers.push_back(part_marker);
-        }
-
-        // Publish the marker array
+        marker_array.markers.push_back(marker);
         amr_publisher_->publish(marker_array);
     }
 
-    void followPath(const PartInfo& part) {
-        if (part.part != "Delivery") {
-            RCLCPP_INFO(this->get_logger(), "Moving to X = %f, Y = %f", 
-                            part.pick_x, part.pick_y);
-        }
-        // Implement movement code
-    }
-    
-    void printPathDescription(uint32_t order_id, const std::vector<PartInfo>& path) {
-        RCLCPP_INFO(this->get_logger(), "Working on order %u, %s", order_id, order_description.c_str());
 
-        int step = 1;
+    void publishPickupMarkers(const std::vector<PartInfo>& parts) {
+        visualization_msgs::msg::MarkerArray marker_array;
+        int marker_id = 1;
+
+        for (const auto& part : parts) {
+            visualization_msgs::msg::Marker marker;
+            marker.header.frame_id = "map";
+            marker.header.stamp = this->get_clock()->now();
+            marker.ns = "pickup_locations";
+            marker.id = marker_id++;
+            marker.type = visualization_msgs::msg::Marker::CYLINDER;
+            marker.action = visualization_msgs::msg::Marker::ADD;
+            marker.pose.position.x = part.pick_x;
+            marker.pose.position.y = part.pick_y;
+            marker.pose.position.z = 0.0; // Position Z value
+            marker.pose.orientation.x = 0.0;
+            marker.pose.orientation.y = 0.0;
+            marker.pose.orientation.z = 0.0;
+            marker.pose.orientation.w = 1.0;
+            marker.scale.x = 70.0;  
+            marker.scale.y = 70.0;  
+            marker.scale.z = 70.0;  
+            marker.color.a = 1.0;   
+            marker.color.r = 0.0;   
+            marker.color.g = 0.0;  
+            marker.color.b = 1.0;   
+
+            marker_array.markers.push_back(marker);
+        }
+
+        amr_publisher_->publish(marker_array);
+    }
+
+
+    void followPath(uint32_t order_id, const std::vector<PartInfo>& path, const Position& delivery_position) {
+        RCLCPP_INFO(this->get_logger(), "Working on Order Id: %u", order_id);
+        rclcpp::sleep_for(std::chrono::milliseconds(1000));
+
         for (const auto& part : path) {
-            if (part.part == "Delivery") {
-                RCLCPP_INFO(this->get_logger(), "%d. Delivering to destination x: %f, y: %f",
-                            step++, part.pick_x, part.pick_y);
-            } else {
-                RCLCPP_INFO(this->get_logger(), "%d. Fetching part '%s' at x: %f, y: %f",
-                            step++, part.part.c_str(), part.pick_x, part.pick_y);
-            }
-            followPath(part); // Move to the next location
+            RCLCPP_INFO(this->get_logger(), "Fetching %s at (%.2f, %.2f)", part.part.c_str(), part.pick_x, part.pick_y);
+            
+            amr_position_x_ = part.pick_x;
+            amr_position_y_ = part.pick_y;
+            
+            publishAMRMarker(amr_position_x_, amr_position_y_);
+            rclcpp::sleep_for(std::chrono::milliseconds(1000));
         }
+        
+        amr_position_x_ = delivery_position.x;
+        amr_position_y_ = delivery_position.y;
+
+        RCLCPP_INFO(this->get_logger(), "Delivering to Destination (%.2f, %.2f)", 
+                                                delivery_position.x, delivery_position.y);
+        
+        publishAMRMarker(amr_position_x_, amr_position_y_);
+        rclcpp::sleep_for(std::chrono::milliseconds(1000));
 
     }
 
-    std::string order_description = "";
-
-    bool is_first_order_ = true;
-    
-    double amr_position_x_ = 0.0;
-    double amr_position_y_ = 0.0;
-
-    double last_delivery_x_ = 0.0;
-    double last_delivery_y_ = 0.0;
-   
     std::string directory_path_;
     std::string orders_folder_path_;
     std::string config_folder_path_;
-
-    std::map<std::string, ProductInfo> product_parts_;
+    
+    std::string order_description;
 
     rclcpp::Subscription<interfaces::msg::Order>::SharedPtr order_subscription_;
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr position_subscription_;
     rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr amr_publisher_;
+
+    std::map<std::string, ProductInfo> product_parts_;
+    double last_delivery_x_ = 0.0;
+    double last_delivery_y_ = 0.0;
+    bool is_first_order_ = true;
+
+    double amr_position_x_ = 0.0;
+    double amr_position_y_ = 0.0;
 };
 
-int main(int argc, char **argv) {
+int main(int argc, char* argv[]) {
     rclcpp::init(argc, argv);
     auto node = std::make_shared<OrderOptimizerNode>();
     rclcpp::spin(node);
