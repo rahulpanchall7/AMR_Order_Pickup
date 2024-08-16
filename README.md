@@ -8,7 +8,7 @@
    $source /opt/ros/humble/setup.bash
    $source ~/{your_workspace}/install/setup.bash
 
-3. Run the ransformbroadcaster node, for static tftree transform:
+3. Run the transformbroadcaster node, for static tftree transform:
    $ros2 run amr_pkg transformbroadcaster
    
 5. Open RVIZ:
