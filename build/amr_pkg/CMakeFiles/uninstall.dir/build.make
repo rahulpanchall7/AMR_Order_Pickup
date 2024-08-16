@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sahil/AMR_Order_Pickup/src/amr_pkg
+CMAKE_SOURCE_DIR = /home/rahul/AMR_Order_Pickup/src/amr_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sahil/AMR_Order_Pickup/build/amr_pkg
+CMAKE_BINARY_DIR = /home/rahul/AMR_Order_Pickup/build/amr_pkg
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/sahil/AMR_Order_Pickup/build/amr_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sahil/AMR_Order_Pickup/src/amr_pkg /home/sahil/AMR_Order_Pickup/src/amr_pkg /home/sahil/AMR_Order_Pickup/build/amr_pkg /home/sahil/AMR_Order_Pickup/build/amr_pkg /home/sahil/AMR_Order_Pickup/build/amr_pkg/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rahul/AMR_Order_Pickup/build/amr_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rahul/AMR_Order_Pickup/src/amr_pkg /home/rahul/AMR_Order_Pickup/src/amr_pkg /home/rahul/AMR_Order_Pickup/build/amr_pkg /home/rahul/AMR_Order_Pickup/build/amr_pkg /home/rahul/AMR_Order_Pickup/build/amr_pkg/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 
