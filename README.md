@@ -35,6 +35,9 @@
    $ros2 topic pub -1 /nextOrder interfaces/msg/Order "{order_id: 1300020, description: 'This is a sample order description'}"
 
 
+Note: If you encounter this error "CMake Error: The current CMakeCache.txt directory /home/rahul/AMR_Order_Pickup/build/interfaces/CMakeCache.txt is different than the directory...", just delete the build, log, install folders and rebuild the workspace.  
+
+
 
 
 
