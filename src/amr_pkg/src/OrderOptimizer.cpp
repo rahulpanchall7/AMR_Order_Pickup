@@ -237,17 +237,6 @@ private:
         return std::sqrt(std::pow(x2 - x1, 2) + std::pow(y2 - y1, 2));
     } 
 
-    double pathLength(const std::vector<PartInfo>& path) {
-        // to calculate the euclidean distance between two points
-        double total_distance = 0.0;
-        for (size_t i = 0; i < path.size() - 1; ++i) {
-            total_distance += calculateEucDistance(
-                path[i].pick_x, path[i].pick_y,
-                path[i+1].pick_x, path[i+1].pick_y
-            );
-        }
-        return total_distance;
-    }  
 
     std::vector<PartInfo> solveShortestPath(const std::vector<PartInfo>& parts, double delivery_x, double delivery_y, const Position& start_position) {
         std::vector<PartInfo> route;

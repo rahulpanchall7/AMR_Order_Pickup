@@ -1,0 +1,6 @@
+Invoking command in '/home/rahul/AMR_Order_Pickup/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rahul/AMR_Order_Pickup/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/rahul/AMR_Order_Pickup/install/interfaces
+Invoked command in '/home/rahul/AMR_Order_Pickup/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rahul/AMR_Order_Pickup/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/rahul/AMR_Order_Pickup/install/interfaces
+Invoking command in '/home/rahul/AMR_Order_Pickup/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rahul/AMR_Order_Pickup/build/interfaces -- -j6 -l6
+Invoked command in '/home/rahul/AMR_Order_Pickup/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rahul/AMR_Order_Pickup/build/interfaces -- -j6 -l6
+Invoking command in '/home/rahul/AMR_Order_Pickup/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rahul/AMR_Order_Pickup/build/interfaces
+Invoked command in '/home/rahul/AMR_Order_Pickup/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rahul/AMR_Order_Pickup/build/interfaces
